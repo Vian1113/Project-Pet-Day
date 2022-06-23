@@ -1,0 +1,882 @@
+@mixin minlarge {
+    @media(min-width:1300px) {
+        @content;
+    }
+}
+
+@mixin minextralarge {
+    @media(min-width:1920px) {
+        @content;
+    }
+}
+
+
+
+@mixin extraextralarge {
+    @media(max-width:1920px) {
+        @content;
+    }
+}
+
+
+
+@mixin extralarge {
+    @media(max-width:1200px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media(max-width:992px) {
+        @content;
+    }
+}
+
+@mixin mediumsize {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin smallsize {
+    @media(max-width:576px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+html {
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+body {
+    position: relative;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+
+}
+
+p {
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+
+/* 首頁樣式 */
+
+//pagetop
+
+#pagetop {
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    display: none;
+
+    img {
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-family: 'Nuosu SIL', serif;
+        writing-mode: vertical-lr;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+.pagetopbtn {
+    display: block;
+    height: 5%;
+
+
+}
+
+#socialicon {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 25px;
+    padding: 16px 6px;
+    z-index: 100;
+
+    &show {
+        display: block;
+    }
+
+}
+
+
+
+// Navbar與輪播首圖
+.header {
+    position: relative;
+}
+
+//輪播圖
+
+:root {
+    --swiper-theme-color: #F6D470;
+  }
+
+.swiper {
+
+    margin: 0 auto;
+    width: 100%;
+    height: initial;
+
+}
+
+
+
+.swiper-pagination {
+    @include smallsize {
+        display: none;
+    }
+}
+
+.swiper-button-next1,
+.swiper-button-prev1 {
+
+
+    @include smallsize {
+        display: none;
+    }
+
+}
+
+//輪播結束
+
+
+//輪播圖上的標語
+.solgan, .svcsolgan {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #ffffff;
+
+    @include large {
+        top: 4%;
+    }
+
+    @include smallsize {
+        top: 3%;
+    }
+
+
+    h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
+
+        @include smallsize {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 0.8rem;
+
+        @include smallsize {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+
+.headercontent {
+    font-size: 0.8rem;
+}
+
+// .headercontent {
+//     position: absolute;
+//     top: 0%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 10;
+// }
+
+
+//Logo
+.logo {
+    position: relative;
+    top: -7px;
+    max-width: 188px;
+
+    a {
+        display: block;
+        text-align: center;
+
+        @include mediumsize {
+            display: none;
+
+        }
+    }
+
+    img {
+        max-width: 60%;
+
+        @include mediumsize {
+            display: none;
+
+        }
+    }
+}
+
+//768px以下的logo
+.logowhite {
+    img {
+        width: 100px;
+    }
+}
+
+//鎖定上方最大的nav
+.nav {
+    position: fixed;
+    max-height: 58px;
+    background-color: #F6D470;
+    color: #ffffff;
+    z-index: 10;
+    gap: 20px;
+    padding-right: 0px;
+}
+
+//nav裡面的清單
+.navbar {
+
+    font-size: 1.2rem;
+    gap: 50px;
+    padding-left: 0px;
+
+    @include large {
+        font-size: 1rem;
+    }
+
+    @include mediumsize {
+        display: none
+    }
+
+    li {
+        padding-bottom: 35px;
+    }
+
+}
+
+.navmobile {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 46px;
+    //bottom:0;
+    //flex-direction: column;
+    //transform:translateY(100%);
+    background-color: #F6D470;
+
+    menu {
+        width: 100%;
+    }
+}
+
+//每一個清單的樣式與hover效果
+.menubtn {
+
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        margin: 1px auto;
+        background-color: #ffffff;
+        transition: width 0.3s;
+    }
+
+    &:hover {
+        color: #8D6B52;
+    }
+}
+
+
+.menu:hover {
+    a:after {
+        width: 85%;
+
+        @include mediumsize {
+            width: 20%;
+        }
+    }
+
+    &:hover .dropdownlist {
+
+        display: block;
+
+    }
+
+}
+
+
+
+//第二層下拉式選單
+.dropdownlist {
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    background-color: #F6D470;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        margin: 10px;
+
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+
+}
+
+//漢堡選單圖示
+svg {
+
+    width: 60px;
+    height: 50px;
+
+}
+
+
+
+//服務搜尋bar
+
+
+.option {
+    /*用div的樣式代替select的樣式*/
+    
+    width: 140px;
+    height: 40px;
+    /*盒子陰影修饰作用,自己随意*/
+    /* box-shadow: 0 0 5px #ccc;*/
+    position: relative;
+    
+}
+
+.option select {
+    /*清除select的邊框樣式*/
+    border: none;
+    /*清除select聚焦时候的邊框颜色*/
+    outline: none;
+    /*將select的寬高等於div的寬高*/
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /*隐藏select的下拉圖標*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*通過padding-left的值讓文字居中*/
+    padding-left: 20px;
+    background-color: #FBF9F7;
+    border:1px solid #8D6B52;
+    color:#8D6B52;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+
+/*使用偽類给select添加自己想用的圖標*/
+.option:after {
+    content: "";
+    width: 14px;
+    height: 8px;
+    background: url(../img/downarrow.svg) no-repeat center;
+    /*通過定位將圖標放在合適的位置*/
+    position: absolute;
+    right: 30px;
+    top: 41%;
+    /*給自定義的圖標實現點擊下來功能*/
+    pointer-events: none;
+
+    @include large {
+        right:12px;
+    }
+
+}
+
+
+
+//搜尋按鈕
+.search {
+    margin-top: 65px;
+
+    h2 {
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    &btn {
+        a {
+            border-radius: 55px;
+            background-color: #F6D470;
+            width: 150px;
+            padding: 13px 86px;
+            font-size: 1.2rem;
+            //cursor: pointer;
+            padding: 5px 0px;
+            text-align: center;
+
+            svg{
+                width:30px;
+            }
+
+        }
+
+        a:hover {
+            color: #8D6B52;
+
+        }
+
+    }
+
+}
+
+//搜尋服務bar
+.searchbar{
+    max-width:70%;
+    margin: 0 auto;
+    gap:15px;
+    background-color: #FBF9F7;
+    border-radius: 12px;
+    border: 2px solid #8D6B52;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    -webkit-box-shadow: -1px 5px 8px -2px rgba(30, 23, 17, 0.66);
+    box-shadow: -1px 5px 8px -2px rgba(30, 23, 17, 0.66);
+
+
+    @include mediumsize() {
+        display: none;
+    }
+
+}
+
+//關於我們區
+
+.banner {
+    height: 450px;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+}
+
+.banner-text {
+    margin-top: 90px;
+
+    h2 {
+        font-weight: bold;
+        color: #8D6B52;
+
+    }
+}
+
+#fixedicon {
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    padding: 16px 6px;
+
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+    z-index: 100;
+    opacity: 75%;
+
+
+    @include extralarge() {
+        display: none;
+    }
+
+
+
+    p {
+        margin-bottom: 12px;
+
+    }
+
+    img {
+        width: 80%;
+
+    }
+}
+
+// .fixedicon-hor {
+//     display: none;
+//     position: fixed;
+//     top: 0px;
+//     right: 5px;
+//     padding: 3px 35px;
+
+//     background: rgba(255, 255, 255, 0.8);
+//     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
+//     border-radius: 0px 0px 30px 30px;
+//     z-index: 100;
+//     opacity: 75%;
+
+//     @include extralarge() {
+//         display: block;
+//     }
+
+//     @include mediumsize() {
+
+//         padding: 0px 10px;
+//         border-radius: 0px 0px 25px 25px;
+//     }
+//     @include smallsize() {
+//         display:none;
+//     }
+
+
+
+//     p {
+//         margin-bottom: 5px;
+//         @include mediumsize() {
+//             font-size: 0.3rem;
+//         }
+//     }
+
+//     img {
+//         width: 80%;
+//         @include mediumsize() {
+//             width:40%;
+//         }
+//     }
+// }
+
+
+
+
+
+
+//服務內容與轉介服務區
+
+.contentlist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+        max-width: 5%;
+        transform: matrix(0.95, -0.35, 0.3, 0.94, 0, 0);
+        margin-right: 5px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        @include mediumsize {
+            font-size: 1.2rem;
+        }
+
+        @include smallsize {
+            font-size: 1rem;
+        }
+    }
+
+
+}
+
+.service-1 {
+    max-width: 60%;
+}
+
+.service-2,
+.service-4,
+.service-5 {
+    max-width: 85%;
+}
+
+.service-3 {
+    max-width: 75%;
+}
+
+
+.servicebtn {
+
+    margin: 0 auto;
+    width: 180px;
+
+
+    a {
+        padding: 8px 30px;
+        border-radius: 58px;
+    }
+}
+
+
+//保姆評價
+.sitter-img {
+    max-width: 15%;
+}
+
+.star {
+    max-width: 75%;
+}
+
+.sitterbg {
+
+    position: absolute;
+    left: 8%;
+    top: -73px;
+    z-index: -10;
+    max-width: 85%;
+
+    @include mediumsize {
+        top: -16px;
+    }
+
+    @include smallsize {
+        top: 0px;
+    }
+
+
+}
+
+.sitterarea {
+    margin-top: 100px;
+
+}
+
+
+.sitter {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+
+
+
+.swiper-button-next2,
+.swiper-button-prev2 {
+   
+    position: absolute;
+
+
+}
+
+.swiper-button-prev2 {
+    left: 213px;
+    top: 314px;
+
+    @include extralarge {
+        left: 187px;
+        top: 288px;
+    }
+
+
+    @include large {
+        left: 123px;
+        top: 257px;
+    }
+
+    @include mediumsize {
+        left: 48px;
+        top: 225px;
+    }
+
+}
+
+.swiper-button-next2 {
+    right: 213px;
+    top: 314px;
+
+    @include extralarge {
+        right: 187px;
+        top: 288px;
+    }
+
+
+    @include large {
+        right: 123px;
+        top: 257px;
+    }
+
+    @include mediumsize {
+        right: 48px;
+        top: 225px;
+    }
+}
+
+#sitterpage {
+    position: absolute;
+    top: 413px;
+
+    @include large {
+        top: 389px;
+    }
+
+}
+
+
+.review {
+    position: relative;
+}
+
+
+
+
+
+
+
+//常見問題
+
+.faq {
+    margin-top: 100px;
+
+    @include extralarge {
+        margin-top: 65px;
+    }
+
+    &detail {
+        display: none;
+    }
+
+}
+
+.active {
+    color: #8D6B52;
+    font-weight: bolder;
+}
+
+
+.list {
+
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.faqcontent {
+
+    cursor: pointer;
+
+    a {
+        color: #000000;
+    }
+
+    img {
+        width: 30px;
+        font-weight: bold;
+    }
+}
+
+
+
+.moreqa {
+    a {
+
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        color: #757575;
+
+
+        &:hover {
+            text-decoration: underline;
+
+        }
+
+    }
+
+}
+
+.footerimg {
+    height: 600px;
+    background-image: url("../img/footer-bg-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
+
+    @include minlarge {
+        background-size: cover;
+
+    }
+
+    @include minextralarge {
+        height: 890px;
+
+    }
+
+
+
+
+}
+
+.footernav {
+
+    a,
+    span {
+        color: #939291;
+    }
+
+}
+
+.copyright {
+    color: #939291;
+}
+
+.text {
+    display: flex;
+}

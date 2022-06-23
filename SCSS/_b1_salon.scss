@@ -1,0 +1,48 @@
+.serviceintro {
+    height: 915px;
+    background-image: url("../img/saloncontent.png");
+    background-position: center;
+    @include mediumsize {
+        height:620px;
+    }
+
+    .container{
+        min-height: 775px;
+    }
+
+    .banner-text{
+        margin-top: 25px;
+        @include mediumsize {
+            margin-top: -195px;
+        }
+
+    }
+
+    .contentlist{
+        p {
+            
+            @include mediumsize {
+                font-size: 1rem;
+            }
+    
+            @include smallsize {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+ 
+}
+
+.salonguest{
+
+    .guest-img {
+        max-width: 25%;
+    }
+    
+    .star {
+        max-width: 60%;
+    }
+    
+
+}

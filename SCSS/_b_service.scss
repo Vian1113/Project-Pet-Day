@@ -1,0 +1,203 @@
+.svcsolgan {
+    top: 330px;
+}
+
+
+
+//首圖浮動服務列表
+
+.servicelist {
+    h5 {
+        font-size: 1rem;
+        font-weight: bold;
+
+        @include large() {
+            font-size: 0.5rem;
+        }
+    }
+
+    a {
+        color: #000000;
+
+        &:hover {
+            color: #8D6B52;
+            img{
+                border:2px solid #8D6B52;
+                border-radius: 99em;
+            }
+        }
+    }
+}
+
+.bookingbar {
+    -webkit-box-shadow: -1px 5px 8px 1px rgba(30, 23, 17, 0.66);
+    box-shadow: -1px 5px 8px 1px rgba(30, 23, 17, 0.66);
+
+    @include large() {
+        gap: 10px;
+    }
+}
+
+.booking a {
+    @include large() {
+        width: 120px;
+        font-size: 1rem;
+    }
+}
+
+//服務內容引言
+
+.forwardintro {
+    margin-top: 150px;
+
+    h2,
+    p {
+        font-weight: bold;
+
+    }
+
+    p {
+        color: #757575;
+    }
+}
+
+//最新活動
+.detail {
+    text-align: justify;
+
+    
+
+
+    h5 {
+        font-weight: bold;
+    }
+
+    p {
+        color: #757575;
+        font-weight: 600;
+    }
+}
+
+.d{
+    &left{
+        @include extraextralarge {
+            margin-left: 1.5rem;
+            margin-top: 0;
+        }
+    
+        @include mediumsize {
+            margin-top: 1.5rem;
+            margin-left: 0;
+            
+        }
+    }
+
+    &right{
+
+        @include extraextralarge {
+            margin-right: 1.5rem;
+            margin-top: 0;
+        }
+    
+        @include mediumsize {
+            margin-top: 1.5rem;
+            margin-right: 0;
+            
+        }
+    }
+}
+
+//顧客評價
+
+.guestarea {
+    margin-top: 150px;
+
+    .subtitle {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #757575;
+    }
+
+}
+
+.guest-img {
+    max-width: 8%;
+}
+
+.comment {
+    font-weight: 600;
+    color: #424242;
+    font-size: 1.2rem;
+}
+
+.guest {
+
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: auto;
+
+}
+
+
+.swiper-button-next3,
+.swiper-button-prev3 {
+    color: #F6D470;
+    position: absolute;
+
+
+}
+
+.swiper-button-prev3 {
+    left: 213px;
+    top: 120px;
+
+    @include extralarge {
+        left: 123px;
+        top: 78px;
+    }
+
+
+    @include large {
+        left: 50px;
+        top: 70px;
+    }
+
+    @include mediumsize {
+        left: 0px;
+        top: 64px;
+    }
+
+    @include smallsize {
+        left: 26px;
+        
+    }
+
+}
+
+.swiper-button-next3 {
+    right: 213px;
+    top: 120px;
+
+    @include extralarge {
+        right: 123px;
+        top: 78px;
+    }
+
+
+    @include large {
+        right: 50px;
+        top: 70px;
+    }
+
+    @include mediumsize {
+        right: 0px;
+        top: 64px;
+    }
+
+    @include smallsize {
+        right: 26px;
+        
+    }
+
+}
