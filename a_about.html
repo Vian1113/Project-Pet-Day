@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="SCSS/all.css">
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nuosu+SIL&display=swap"
+    rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <!-- jquery/js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+
+  <!-- aos/css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- aos/js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <style>
+
+  </style>
+
+
+  <title>Pet Day</title>
+</head>
+
+<body>
+  <div id="pagetop">
+    <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
+      <p class="ms-0 me-0">Page Top</p>
+    </a>
+  </div>
+  <div id="socialicon">
+    <div class="mb-3">
+      <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    </div>
+    <div class="mb-3">
+      <a href="index.html"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+
+  
+
+  <header>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="home"></a></h1>
+      <ul class="navbar">
+        <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="b1_salon.html">到府美容</a></li>
+            <li><a href="b2_sitting.html">到府照顧</a></li>
+            <li><a href="b3_walking.html">遛狗散步</a></li>
+            <li><a href="b4_clinic.html">醫療轉介</a></li>
+            <li><a href="b5_funeral.html">殯儀轉介</a></li>
+          </ul>
+        </li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="c_petsitter.html">寵物保姆</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="c1_intro.html" style="width:100px">介紹與評價</a></li>
+            <li><a href="c2_booking.html">預約服務</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="home"></a></h1>
+
+      <ul class="navbar">
+        <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="d1_sitter.html">成為保姆</a></li>
+            <li><a href="d2_volunteer.html">成為志工</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+      <!-- 漢堡選單圖示 -->
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></a>
+
+      <!-- 漢堡選單點擊後出現 -->
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+   
+    <div class="header-bg">
+      <div class="swiper">
+
+        <div class="swiper-slide">
+          <img src="img/bgimage-11.png" alt="bgimage-5">
+        </div>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <div class="banner">
+    <div class="container">
+      <div class="row g-0 d-flex justify-content-center banner-text">
+        <div class="col-lg-8 text-center d-flex flex-column">
+          <h2 class="mb-2 mt-5">Pet Day</h2>
+          <h2 class="mb-3">日日為寵物著想</h2>
+          <p class="lh-base fw-bolder">
+            我們都因毛孩而有過快樂與幸福的時光<br>
+            同時也深知毛孩照顧的不易與陪伴的需求<br>
+            努力希望能對台灣寵物飼養環境盡一份心力<br>
+            也希望能給欲從事寵物保姆行業卻苦於沒有平台發展的保姆們一個機會<br>
+            我們創立了PetDay寵物共享照顧平台<br>
+            秉持隨時將毛孩放在掌心呵護，日日為寵物著想、代替忙碌飼主給予最好照顧的宗旨<br>
+            希望在飼主、保姆與毛孩間營造一個友善的循環，共創三贏局面<br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div id="fixedicon">
+      <div class="icon text-center">
+        <a href="index.html"><img src="./img/home-1.png" alt="home"></a>
+        <p>Home</p>
+      </div>
+      <div class="icon text-center">
+        <a href="#"><img src="./img/chat.png" alt="chats"></a>
+        <p>Chats</p>
+      </div>
+      <div class="icon text-center">
+        <a href="#"><img src="./img/call.png" alt="calls"></a>
+        <p>Calls</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- 為何選擇Pet Day -->
+  <div class="servicecontent container mt-6">
+    <h3 class="mb-4 fw-bold text-secondary text-center">為何選擇Pet Day?</h3>
+    <div class="row justify-content-center align-items-center d-flex cardwrap">
+      <div class="cardbody">
+        <div class=" cardimage cardwalking text-center">
+          <h4 class="mt-5 mb-3 fw-bold">貼心到府與遛狗服務</h4>
+        </div>
+        <div class=" reasondetail text-center">
+          <div class="detailarea">
+            <h4 class="mt-5 mb-3 fw-bold text-dark">貼心到府與遛狗服務</h4>
+            <p class="text-light">由專業保姆到府美容、到府照顧，為您的重要毛孩家人提供最專業的照顧</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardbody">
+        <div class=" cardimage cardsitting">
+          <h4 class="mt-5 mb-3 fw-bold">專業保姆讓您安心放心</h4>
+        </div>
+        <div class=" reasondetail text-center cardbg-2">
+          <div class="detailarea">
+            <h4 class="mt-5 mb-3 fw-bold text-dark">專業保姆讓您安心放心</h4>
+            <p class="text-light">我們要求保姆註冊時需填寫過往相關經驗與提供證照與身份認證，資訊透明公開讓您能放心託付毛寶貝。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardbody">
+        <div class=" cardimage cardreferred">
+          <h4 class="mt-5 mb-3 fw-bold">轉介服務讓您省時省心</h4>
+        </div>
+        <div class=" reasondetail text-center cardbg-3">
+          <div class="detailarea">
+            <h4 class="mt-5 mb-3 fw-bold text-dark">轉介服務讓您省時省心</h4>
+            <p class="text-light">提供轉介服務，讓您不再為了找尋醫療院所或殯儀業者而焦頭爛額，也能即時給予毛寶貝治療。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 聯絡我們 -->
+  <div class="container mt-6 text-center contact">
+    <h3 class="mb-4 fw-bold text-secondary">聯絡資訊</h3>
+    <p class="subtitle">謝謝您的來訪!<br>如有任何問題，歡迎您來電或來信至客服信箱或即時訊息<br>將有專人回覆您的問題
+    </p>
+
+
+    <div class="row mt-4 d-flex flex-sm-column flex-lg-row justify-content-xl-evenly">
+      <form class=" col-lg-5 pt-2 pb-5  formdetail text-start">
+        <div class="mb-3">
+          <div class="mb-3 d-flex justify-content-between">
+            <div class="col-5">
+              <label for="name" class="form-label fw-bolder">姓名</label>
+              <input type="text" class="form-control" required="required" placeholder="請輸入姓名" id="name">
+            </div>
+
+
+            <div class="col-6">
+              <label for="email" class="form-label fw-bolder">電子信箱</label>
+              <input type="email" class="form-control" required="required" placeholder="example@mail.com" id="email">
+            </div>
+          </div>
+          <label for="
+          subject" class="form-label fw-bolder">主旨</label>
+          <input type="text" class="form-control" required="required" placeholder="請輸入主旨" id="subject">
+
+        </div>
+        
+        <div class="mb-3">
+          <label for="message" class="fw-bolder form-label ">內容</label>
+          <textarea class="form-control" placeholder="請輸入內容"id="message" rows="3"></textarea>
+        </div>
+        
+        <div class="submitarea d-flex align-items-center">
+          <button type="submit" class="btn btn-primary me-2 submitbtn">登入</button>
+          <button type="reset" class="btn btn-outline-primary me-2">重置</button>
+
+        </div>
+      </form>
+
+      <ul class="contactlist col-lg-6 text-start mb-0 mt-3 mt-lg-0">
+      
+        <li>
+          <div class="contactitem d-flex align-items-center">
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>02-4527-3874 (週一至週五 早上10點~晚上7點)</p>
+  
+          </div>
+        </li>
+        
+        
+        <li>
+          <div class="contactitem d-flex align-items-center">
+            <i class="fa-solid fa-envelope"></i>
+            <p>E-mail : petday.service@com.tw</p>
+  
+          </div>
+        </li>
+        
+        <li>
+          <div class="contactitem d-flex align-items-center">
+            <i class="fa-solid fa-comment-dots"></i>
+            <p>請點選頁面右上方「Chat」欄位即可開始即時對談</p>
+  
+          </div>
+        </li>
+
+        
+        
+      </ul>
+    </div>
+  
+
+    
+     
+      
+
+    
+  </div>
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg">
+    <div class="eventarea text-center">
+      <h2 class="fw-bold mb-3">首次登入預約<br>即刻贈送家訪服務！</h2> 
+      <p class="text-light fw-bold mb-5">不確定自己的毛孩適合什麼服務？<br>該如何了解毛孩的需求？<br>PetDay提供首次使用者可免費進行一次家訪服務<br>帶您一同深入瞭解毛孩們！</p>  
+      
+      <div class="eventbtn">
+        <button  class="btn detailbtn btn-outline-secondary me-2"><a href="#">查看詳情</a></button>
+        <button  class="btn btn-secondary me-2"><a href="f_signup.html">立即註冊</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+
+</body>
+
+</html>

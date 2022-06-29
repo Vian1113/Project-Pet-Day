@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="SCSS/all.css">
+
+
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nuosu+SIL&display=swap"
+    rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <!-- jquery/js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+
+  <style>
+
+  </style>
+
+
+  <title>Pet Day</title>
+</head>
+
+<body>
+  <div id="pagetop">
+    <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
+      <p class="ms-0 me-0">Page Top</p>
+    </a>
+  </div>
+  <div id="socialicon">
+    <div class="mb-3">
+      <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+  <div id="fixedicon">
+    <div class="icon text-center">
+      <a href="index"><img src="./img/home-1.png" alt="home"></a>
+      <p>Home</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/chat.png" alt="chats"></a>
+      <p>Chats</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/call.png" alt="calls"></a>
+      <p>Calls</p>
+    </div>
+  </div>
+  <header>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png" alt="home"></a></h1>
+      <ul class="navbar">
+        <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="service.html">服務內容</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="b1_salon.html">到府美容</a></li>
+            <li><a href="b2_sitting.html">到府照顧</a></li>
+            <li><a href="b3_walking.html">遛狗散步</a></li>
+            <li><a href="b4_clinic.html">醫療轉介</a></li>
+            <li><a href="b5_funeral.html">殯儀轉介</a></li>
+          </ul>
+        </li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="c_petsitter.html">寵物保姆</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="c1_intro.html" style="width:100px">介紹與評價</a></li>
+            <li><a href="c2_booking.html">預約服務</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="home"></a></h1>
+
+      <ul class="navbar">
+        <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="d1_sitter.html">成為保姆</a></li>
+            <li><a href="d2_volunteer.html">成為志工</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+      <!-- 漢堡選單圖示 -->
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></a>
+
+      <!-- 漢堡選單點擊後出現 -->
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+
+
+    <div class="header-bg">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="joinbg">
+            <div class="heroarea text-center text-lg-start">
+              <h2 class="fw-bold mb-3 text-secondary">成為PetDay保姆<br>安全安心揪甘心！</h2>
+              <p class="text-light fw-bold mb-2">加入 PetDay 大家庭，享受自由與熱情交織的工作機會<br>提供安全的交易平台、安心保障、甘心福利</p>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 表單 -->
+  <div class="container text-center">
+    <p class="subtitle fw-bold">填寫表單越詳細審核越快速</p>
+    <h3 class="mb-3 mt-3 fw-bold ">歡迎熱愛動物、具有高度耐心的你加入PetDay！</h3>
+    <p class="subtitle fw-bold">上傳身份認證及專業寵物服務證照可提升初次接取委託的機會</p>
+    <div class="row mt-5 justify-content-center ">
+      <div class="col-xl-4 col-5">
+        <ul class="joinlist text-start ps-0 mb-0">
+          <li class=" border border-light p-3">
+            <img src="img/form-img-1.png" alt="icon">
+            <h5 class="fw-bold mt-2">按照表格填寫身份信息</h5>
+            <p class="text-light">請務必按照表格內容填寫，填寫完畢送出後，將經過3~5個工作天的審核時間，審核通過將發送通知至您的帳號信箱
+            </p>
+          </li>
+          <li class="mt-4 border border-light  p-3">
+            <img src="img/form-img-2.png" alt="icon">
+            <h5 class="fw-bold mt-2">身份認證</h5>
+            <p class="text-light">可選擇上傳身分證、駕照、健保卡三者擇一上傳，請務必拍攝清楚證件內容，若是內容無法識別將退回申請
+            </p>
+          </li>
+          <li class="mt-4 border border-light  p-3">
+            <img src="img/form-img-3.png" alt="icon">
+            <h5 class="fw-bold mt-2">專業服務認證</h5>
+            <p class="text-light">PetDay歡迎具有任何與寵物專業服務相關的認證，證書、結業證明可擇一上傳，認證過後將會在您的個人資訊頁面頒發「專業服務認證」徽章
+            </p>
+          </li>
+        </ul>
+      </div>
+      <form class="col-xl-6 col-7 formdetail joinform">
+        <h4 class="fw-bold mt-5">填寫表單</h4>
+        <div class="mb-3 text-start col-10 joinitem">
+          <label for="account" class="form-label">帳號信箱</label>
+          <input type="email" class="form-control" id="account" placeholder="example@mail.com" required="required">
+
+        </div>
+        <div class="mb-3 text-start col-10 joinitem">
+          <label for="accountname" class="form-label">帳號名稱</label>
+          <input type="text" class="form-control" id="accountname" required="required">
+        </div>
+        <div class="mb-3 text-start col-10 joinitem">
+          <label for="name" class="form-label">姓名</label>
+          <input type="text" class="form-control" id="name" required="required">
+        </div>
+        <div class="mb-3 text-start col-10 joinitem">
+          <label for="phone" class="form-label">聯絡電話</label>
+          <input type="tel" class="form-control" id="phone" required="required">
+        </div>
+        <div class="mb-3 text-start col-10 joinitem">
+          <label for="idinput" class="form-label" type="file">上傳認證資料（身分證、駕照、健保卡擇一）</label>
+          <input type="file" class="form-control" id="inputGroupFile02" required="required">
+
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+          <label class="form-check-label" for="exampleCheck1">相關條款閱讀完畢後請勾選</label>
+        </div>
+        <div class="submitarea d-flex align-items-center justify-content-center">
+          <button type="submit" class="btn btn-primary me-2 ">送出</button>
+          <button type="reset" class="btn btn-outline-primary">取消</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <!--福利說明-->
+
+  <div class="container-fluid text-center mt-6 joinad pt-5">
+    <p class="subtitle fw-bold">選擇台灣最好的寵物服務平台跟我們一起成長解鎖更多福利</p>
+    <h3 class="mb-3 mt-3 fw-bold ">優渥的工作與曝光機會<br>保障薪資提供額外毛孩福利</h3>
+    <p class="subtitle fw-bold">快來看看還有哪些好康福利吧</p>
+
+    <ul class="row ps-0 justify-content-center mt-4">
+      <li class="col-5 mb-3">
+        <img src="img/join-01.png" alt="joinadvantage">
+        <h4 class="fw-bold mt-2">達到目標50份五星服務回饋留言<br>即可成為榮耀保姆登上網站頁面</h4>
+        <p>在PetDay網站中設有「榮耀保姆榜」，是專門為表現辛勤優秀的保姆們設立的曝光機會，客戶將可以透過榮譽榜了解您</p>
+      </li>
+      <li class="col-5 mb-3">
+        <img src="img/join-02.png" alt="joinadvantage">
+        <h4 class="fw-bold mt-2">只要具有「榮耀保姆」身份者可獲<br>一年一次免費毛孩全身檢查</h4>
+        <p>PetDay跟全台124間寵物醫院合作，我們免費提供我們榮譽保姆們一年一次的寵物全身健檢，讓您的毛孩保持健康快樂</p>
+      </li>
+    </ul>
+
+
+
+    <!-- 保姆評價 -->
+    <div class="container text-center sitterarea pb-6">
+
+      <h3 class="mb-3 fw-bold ">看看資深保姆怎麼說</h3>
+      <p class="subtitle fw-bold pb-3">成為榮譽保姆並不難，快來了解榜上保姆怎麼說</p>
+
+      <!-- swiper 評價輪播 -->
+      <div class="container">
+        <div class="swiper guest" id="comment-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper joinguest">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">林哈啾</p>
+                      <p class="text-light ">資深榮譽保姆</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      本身是一名自由撰稿家，收入來源比較不穩定，但因為自己一個人住家裡有一些空房間，我又很喜歡狗狗貓貓，養了一隻黃金和四隻貓，在逛網站的時候發現PetDay，看到有在徵招保姆就立即申請。後來透過平台慢慢累積了一些穩定的客戶，現在天天跟寶貝們愉快的生活著
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">鄭叮叮</p>
+                      <p class="text-light ">寵物物理治療師</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      會成為PetDay的保姆是因為他們提供一個對我來說很重要的服務內容，那就是「專業認證」的保姆資格。我是一名寵物物理治療師，原先是因為家裡的老狗因退化而需要物理治療，但因為費用實在龐大，後來狠下心自己繳了一筆學費成為物力治療師，我現在不但可以......
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">王安安</p>
+                      <p class="text-light ">新進保姆</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      我是因為看上了PetDay的福利而成為保姆的，我原先還在想成為「榮譽保姆」是一件挺困難也需要時間累積才能晉升，但我在加入了一個月之後，很快就上了榜單。所以我想講的是，PetDay的客源穩定、需求量也不斷增加，平台有沒有用心經營，保姆們第一時間就可以知道
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">林友善</p>
+                      <p class="text-light ">榮譽保姆</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      我已經退休一、兩年啦！但一直不知道要做什麼，在女兒的介紹下成為了這裡的保姆人員。我家也沒什麼空間，平常就是有委託就照顧一下阿貓阿狗，越做越有興趣，感覺自己找回了我對社會的價值需求，也謝謝PetDay讓我找到之後想努力的目標與方向！
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination" id="sitterpage"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- 資格福利 -->
+  <div class="container mt-5">
+    <div class="qualitybanner text-center">
+      <img class="qualityimg" src="img/d_join_heartshape.png" alt="qualityimg">
+      <div class="textarea">
+        <p class="fw-bold">僅有PetDay提供的大大福利</p>
+        <h3 class="mb-lg-3 mt-lg-3 mb-1 mt-1 fw-bold ">不只保姆具福利資格<br>連你家毛孩一起照顧！</h3>
+        <button type="submit" class="btn btn-primary me-2 ">前往填寫表單 ></button>
+
+      </div>
+
+    </div>
+
+    <ul class="quality  col-xl-6  mt-4 ps-xl-7">
+      <li class="d-flex align-items-start mb-4">
+        <img class="me-2" src="img/form-img-4.png" alt="icon">
+        <div class="quiltyitem">
+          <h5 class="fw-bold">如何加入保姆行列？</h5>
+          <p class="text-light">請先加入成為我們的寵物保姆！<br>表單填寫完畢後將經由3~5個工作天來詳細審核身份認證，申請成功後即可開始您的服務。
+          </p>
+        </div>
+      </li>
+      <li class="d-flex align-items-start   mb-4">
+        <img class="me-2" src="img/form-img-4.png" alt="icon">
+        <div class="quiltyitem">
+          <h5 class="fw-bold">如何成為榮譽保姆？</h5>
+          <p class="text-light">需在平台服務累積 50份客戶所回饋的五顆星評價，目標達成後將提供您「榮譽保姆」身份徽章於您的個人資料。
+          </p>
+        </div>
+      </li>
+      <li class="d-flex align-items-start  mb-4">
+        <img class="me-2" src="img/form-img-4.png" alt="icon">
+        <div class="quiltyitem">
+          <h5 class="fw-bold">毛孩健檢福利只能是我自己的寵物嗎？</h5>
+          <p class="text-light">當然可以將名額使用在他人寵物，但請注意此福利僅一年提供一次，且需由保姆本人向合作診所登記預約。
+          </p>
+        </div>
+      </li>
+      <li class="d-flex align-items-start  mb-4">
+        <img class="me-2" src="img/form-img-4.png" alt="icon">
+        <div class="quiltyitem">
+          <h5 class="fw-bold">健檢內容有哪些項目？</h5>
+          <p class="text-light">我們提供的健檢內容為「基礎項目」，不包含疫苗施打、X光拍攝、抽血化驗等進階項目。請至診所官網查詢詳細內容。
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+
+  <!-- 常見問題 -->
+  <div class="container text-center joinfaq">
+    <h3 class="mb-3 fw-bold ">成為保姆 Q&A</h3>
+    <p class="subtitle fw-bold mb-4">還在猶豫要不要成為保姆嗎？或是你有更多疑問歡迎至下方列表查詢<br>
+    同時也歡迎您致電、寫信給我們做更多詢問喔！</p>
+
+    <div class="row justify-content-center">
+      <ul class="ps-0 col-10 pe-0">
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">如何成為保姆？需要準備什麼資料？ </h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">請先至會員服務中心頁面，點擊成為保姆，即可填寫表單進行申請註冊。請注意務必上傳清晰證件照、駕照或是健保卡進行身份認證，若無法辨識政見內容將退回申請，將透過申請帳號之信箱通知申請通過與否，請留意信箱收件。</p>
+        </li>
+
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">榮譽保姆是什麼？要如何成為？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            造成為榮譽保姆需在平台服務累積 50份客戶所回饋的五顆星評價，目標達成後將提供您「榮譽保姆」身份徽章於您的個人資料，客戶可在保姆的資訊頁面了解您的努力與誠信。
+
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center  ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold"> 交易金額該如何訂定？是否有限制範圍？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">每項服務皆有最小金額跟最大金額限制，詳細規範可至服務內容頁面查詢，或是登入保姆委託系統後可在交易金額設定中查詢。
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">什麼時候發放薪資？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            薪資部分將在每月15號結算，隔月15號可自行從帳號中匯入指定銀行（玉山、國泰世華、中國信託、新光等24間銀行），手續費將從薪資中扣除。您可自行決定薪資匯入時間。</p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold itemtitle">是否提供勞健保？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">我們提供30%勞健保，除此之外我們還有提供國泰安心保險給每一位保姆，確保交易進行中的安全及公平交易。</p>
+        </li>
+
+
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="footerimg"></div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="a_about.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+
+    //顧客評價 加入參數  
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      const swiper = new Swiper("#comment-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 2 欄 */
+          992: {
+            slidesPerView: 2
+          },
+
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+    }
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

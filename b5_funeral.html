@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="SCSS/all.css">
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nuosu+SIL&display=swap"
+    rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <!-- jquery/js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+
+  <style>
+
+  </style>
+
+
+  <title>Pet Day</title>
+</head>
+
+<body>
+  <div id="pagetop">
+    <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
+      <p class="ms-0 me-0">Page Top</p>
+    </a>
+  </div>
+  <div id="socialicon">
+    <div class="mb-3">
+      <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    </div>
+    <div class="mb-3">
+      <a href="index.html"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+  <header>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png" alt="home"></a></h1>
+      <ul class="navbar">
+        <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="b1_salon.html">到府美容</a></li>
+            <li><a href="b2_sitting.html">到府照顧</a></li>
+            <li><a href="b3_walking.html">遛狗散步</a></li>
+            <li><a href="b4_clinic.html">醫療轉介</a></li>
+            <li><a href="b5_funeral.html">殯儀轉介</a></li>
+          </ul>
+        </li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="c_petsitter.html">寵物保姆</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="c1_intro.html" style="width:100px">介紹與評價</a></li>
+            <li><a href="c2_booking.html">預約服務</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="home"></a></h1>
+
+      <ul class="navbar">
+        <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="d1_sitter.html">成為保姆</a></li>
+            <li><a href="d2_volunteer.html">成為志工</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+      <!-- 漢堡選單圖示 -->
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></a>
+
+      <!-- 漢堡選單點擊後出現 -->
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+
+    <div class="header-bg">
+      <div class="swiper indeximg">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/bgimage-10.png" alt="bgimage-10">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+  </header>
+
+  <!-- 到府照顧介紹 -->
+  <div class="banner serviceintro funeral ">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center banner-text">
+        <div class="col text-center d-flex flex-column">
+          <h3 class="mb-2 fw-bold text-secondary">轉介服務</h3>
+          <h4 class="mb-5 fs-5 fw-bold">專業殯儀服務</h4>
+          <div class="contentlist mb-2">
+            <img src="img/icon-1.png" alt="serviceicon">
+            <p class="text-light fw-bold">依照您與毛寶貝的需求, 提供專業醫療與寵物禮儀轉介服務</p>
+          </div>
+          <div class="contentlist  mb-2">
+            <img src="img/icon-1.png" alt="serviceicon">
+            <p class="text-light fw-bold">在您傷痛時，成為您的依靠並由專人讓您能快速了解後續流程
+            </p>
+          </div>
+          <div class="contentlist  mb-2">
+            <img src="img/icon-1.png" alt="serviceicon">
+            <p class="text-light fw-bold">讓Pet Day陪伴您一起與毛孩走完燦爛一生
+            </p>
+          </div>
+
+
+
+          <div class="servicebtn"><a class="bg-primary mt-4" href="#">預訂服務</a></div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div id="fixedicon">
+      <div class="icon text-center">
+        <a href="index.html"><img src="./img/home-1.png" alt="home"></a>
+        <p>Home</p>
+      </div>
+      <div class="icon text-center">
+        <a href="#"><img src="./img/chat.png" alt="chats"></a>
+        <p>Chats</p>
+      </div>
+      <div class="icon text-center">
+        <a href="#"><img src="./img/call.png" alt="calls"></a>
+        <p>Calls</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <!-- 顧客評價 -->
+  <div class="container text-center sitterarea">
+
+    <h3 class="mb-4 fw-bold text-secondary">顧客評價</h3>
+
+
+    <!-- swiper 評價輪播 -->
+    <div class="container">
+      <div class="swiper guest" id="comment-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper salonguest">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-6.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light ">邱小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    第一次碰到狗狗離開，真的很無助又難過，謝謝有Pet Day轉介服務協助我很快找到可以處理後續事物的業者!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-10.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                江小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    謝謝Pet Day提供的轉介服務!真的給我很多幫忙和安慰。
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-15.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                楊小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    還好有Pet Day!
+                    才能讓我好好地送我家Eva最後一程!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- 常見問題 -->
+  <div class="container text-center faq">
+    <h3 class="mb-4 fw-bold text-secondary">常見問題</h3>
+    <div class="row justify-content-center text-start">
+      <ul class="ps-0 col-10 pe-0">
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">殯儀轉介需要收費嗎?</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">殯儀轉介費用我們酌收人工服務100元。但在您確定接受我們的建議並轉介後才會向您收取服務費，在確認轉介前您都可以取消轉介服務。
+          </p>
+        </li>
+
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">建議的殯儀業者會是離飼主家較近的業者嗎?</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3"> 客服人員與您確認細節後，會盡力依照您的需求(住址等)建議殯儀業者。但適合的業者有時未必一定離您住家較近，還請見諒。
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center  ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">預訂後如何使用此服務呢?</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            預訂後將由我們的客服與您聯絡，確認細節後建議您殯儀業者。
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">可以臨時取消或修改訂單嗎?</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            預約醫療轉介服務，客服人員將於二個工作天內與您聯絡了解細節。在您確定接受我們的建議並轉介後才會向您收取服務費，在確認轉介前您都可以取消轉介服務。
+          </p>
+        </li>
+
+
+      </ul>
+    </div>
+    <div class="mt-4 moreqa"><a href="e_faq.html">點擊閱讀更多常見問題</a></div>
+
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="footerimg"></div>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+
+    //顧客評價 加入參數  
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      const swiper = new Swiper("#comment-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+    }
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

@@ -20,6 +20,12 @@
 
 
 
+@mixin extralargebig {
+    @media(max-width:1400px) {
+        @content;
+    }
+}
+
 @mixin extralarge {
     @media(max-width:1200px) {
         @content;
@@ -131,19 +137,17 @@ sub {
     top: 60px;
     left: 25px;
     padding: 16px 6px;
-    z-index: 100;
+    z-index: 4;
 
-    &show {
-        display: block;
-    }
-
+ 
 }
 
 
 
 // Navbar與輪播首圖
-.header {
+header {
     position: relative;
+    
 }
 
 //輪播圖
@@ -182,21 +186,14 @@ sub {
 
 
 //輪播圖上的標語
-.solgan, .svcsolgan {
+.solgan {
     position: absolute;
-    top: 6%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
     color: #ffffff;
 
-    @include large {
-        top: 4%;
-    }
-
-    @include smallsize {
-        top: 3%;
-    }
 
 
     h2 {
@@ -223,13 +220,7 @@ sub {
     font-size: 0.8rem;
 }
 
-// .headercontent {
-//     position: absolute;
-//     top: 0%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     z-index: 10;
-// }
+
 
 
 //Logo
@@ -302,6 +293,7 @@ sub {
     position: absolute;
     left: 0;
     right: 0;
+    z-index:10;
     top: 46px;
     //bottom:0;
     //flex-direction: column;
@@ -381,6 +373,7 @@ svg {
     height: 50px;
 
 }
+
 
 
 
@@ -535,7 +528,7 @@ svg {
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius: 30px 0px 0px 30px;
-    z-index: 100;
+    z-index: 4;
     opacity: 75%;
 
 
@@ -699,7 +692,7 @@ svg {
 .sitter {
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: inherit;
     position: relative;
 
 }
@@ -782,7 +775,7 @@ svg {
 //常見問題
 
 .faq {
-    margin-top: 100px;
+    margin-top: 270px;
 
     @include extralarge {
         margin-top: 65px;
@@ -791,6 +784,8 @@ svg {
     &detail {
         display: none;
     }
+
+   
 
 }
 
@@ -817,6 +812,7 @@ svg {
     img {
         width: 30px;
         font-weight: bold;
+        max-width:none;
     }
 }
 
@@ -842,12 +838,13 @@ svg {
 }
 
 .footerimg {
+    position: relative;
     height: 600px;
     background-image: url("../img/footer-bg-2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    position: relative;
+    
 
     @include minlarge {
         background-size: cover;

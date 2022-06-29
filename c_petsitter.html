@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="SCSS/all.css">
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nuosu+SIL&display=swap"
+    rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <!-- jquery/js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+
+  <style>
+
+  </style>
+
+
+  <title>Pet Day</title>
+</head>
+
+<body>
+  <div id="pagetop">
+    <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
+      <p class="ms-0 me-0">Page Top</p>
+    </a>
+  </div>
+  <div id="socialicon">
+    <div class="mb-3">
+      <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    </div>
+    <div class="mb-3">
+      <a href="index.html"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+
+  <!-- 浮動快捷icon -->
+  <div id="fixedicon">
+    <div class="icon text-center">
+      <a href="index.html"><img src="./img/home-1.png" alt="home"></a>
+      <p>Home</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/chat.png" alt="chats"></a>
+      <p>Chats</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/call.png" alt="calls"></a>
+      <p>Calls</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="home"></a></h1>
+      <ul class="navbar">
+        <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="b1_salon.html">到府美容</a></li>
+            <li><a href="b2_sitting.html">到府照顧</a></li>
+            <li><a href="b3_walking.html">遛狗散步</a></li>
+            <li><a href="b4_clinic.html">醫療轉介</a></li>
+            <li><a href="b5_funeral.html">殯儀轉介</a></li>
+          </ul>
+        </li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="c_petsitter.html">寵物保姆</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="c1_intro.html" style="width:100px">介紹與評價</a></li>
+            <li><a href="c2_booking.html">預約服務</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="home"></a></h1>
+
+      <ul class="navbar">
+        <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="d1_sitter.html">成為保姆</a></li>
+            <li><a href="d2_volunteer.html">成為志工</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+      <!-- 漢堡選單圖示 -->
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></a>
+
+      <!-- 漢堡選單點擊後出現 -->
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+
+    <div class="header-bg">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="petsitterbg">
+            <div class="heroarea text-start">
+              <h2 class="fw-bold mb-3">專業認證保姆<br>最好的陪伴與照顧</h2>
+              <p class="text-light fw-bold mb-2">經由平台嚴格塞選與實名認證保姆資格，優質服務值得信任<br>服務過程提供完善保險，保障毛孩服務品質！</p>
+
+              <ul class="rank d-flex ps-0 mb-3">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+
+              <div class="eventbtn">
+                <button class="btn btn-secondary me-2"><a href="c2_booking.html">立即預約</a></button>
+                <button class="btn detailbtn btn-outline-secondary me-2"><a href="d_join.html">成為保姆</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 提供毛爸媽多元服務 -->
+  <div class="container text-center mt-2">
+    <p class="subtitle fw-bold">PetDay 擁有最優質的保姆人選與服務</p>
+    <h3 class="mb-3 mt-3 fw-bold text-secondary ">提供毛爸媽多元化服務<br>遠端關懷不間斷</h3>
+    <p class="subtitle fw-bold">依據毛孩的需求選取保姆服務，為保障交易過程，保姆會隨時保持聯繫回報毛孩的狀況。</p>
+    <div class="multiservice row align-items-center mt-3">
+
+      <div class="multiitem col-4">
+        <img src="img/icon-2.png" alt="飲食照料">
+        <h5 class="fw-bold mt-2">飲食照料</h5>
+        <p>提供客製化飲食與照顧，<br>特殊需求皆能配合與討論</p>
+      </div>
+      <div class="multiitem col-4">
+        <img src="img/icon-3.png" alt="環境清潔">
+        <h5 class="fw-bold mt-2">環境清潔</h5>
+        <p>環境整理清潔一手包辦，<br>不再擔心加班回家無暇處理</p>
+      </div>
+      <div class="multiitem col-4">
+        <img src="img/icon-4.png" alt="陪伴寵物">
+        <h5 class="fw-bold mt-2">陪伴寵物</h5>
+        <p>在您外出時代替您陪伴毛孩，<br>讓毛孩不再感到孤單</p>
+      </div>
+      <div class="multiitem col-4 mt-2">
+        <img src="img/icon-5.png" alt="寵物社交">
+        <h5 class="fw-bold mt-2">寵物社交</h5>
+        <p>為毛孩擴大社交圈，<br>不再只能獨自待在家</p>
+      </div>
+      <div class="multiitem col-4  mt-2">
+        <img src="img/icon-6.png" alt="醫療照護">
+        <h5 class="fw-bold mt-2">醫療照護</h5>
+        <p>隨時注意毛孩狀況，<br>給予專業醫療照護與建議</p>
+      </div>
+      <div class="multiitem col-4  mt-2">
+        <img src="img/icon-7.png" alt="疫情照顧">
+        <h5 class="fw-bold mt-2">疫情照顧</h5>
+        <p>疫情居隔時，代替您照顧毛孩、<br>遛狗散步與陪伴，讓您安心</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 毛爸媽超推薦回饋 -->
+  <div class="container text-center sitterarea">
+
+    <h3 class="mb-3 fw-bold text-secondary">毛爸媽超推薦回饋</h3>
+    <p class="text-light fw-bold mb-4">360度無微不至，貼心保姆到府陪伴毛孩們</p>
+
+    <!-- swiper 毛爸媽輪播 -->
+    <div class="container">
+      <div class="swiper guest" id="parent-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper salonguest">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-6.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light ">吳小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    到府照顧真的幫了我很多忙! 出差或臨時加班時不用再擔心沒有人可以幫我帶我家狗狗外出放風，讓我安心不少!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-7.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                徐先生</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    自從使用了Pet Day 到府照顧，我家Zoe變得開心不少，因為終於不用再平日每天獨處8小時無聊等我回家啦!
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-8.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                林先生</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    Jojo超喜歡到府的美容，看牠每次那麼享受的樣子，就知道選Pet Day沒有錯!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- 毛孩社交圈評價 -->
+  <div class="container text-center sitterarea">
+
+    <h3 class="mb-3 fw-bold text-secondary">毛孩社交圈在家不孤單</h3>
+    <p class="text-light fw-bold mb-4">保姆1+1 認證服務犬到你家</p>
+
+
+    <!-- swiper 評價輪播 -->
+    <div class="container">
+      <div class="swiper guest" id="pet-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper salonguest">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-6.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light ">陳先生</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    很感謝Pet Day!保姆-Kelly知道我常加班不在家，擔心我家狗狗獨自在家會孤單，每次來都會帶上自己的狗狗一起來，每次看到狗狗們玩在一起的照片，我也很開心!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-4.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                李小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    謝謝有Pet Day! 特別是保姆Lisa，還好有她發現我家小白渴望有玩伴的樣子，每次都會帶著自己的狗狗來我家陪伴小白，照片上的他們看起來真的很開心!
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-5.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                林先生</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    超感謝有Pet Day，讓我家Jojo認識很多好朋友!!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 隔離中爸媽好放心 -->
+  <div class="container text-center sitterarea">
+
+    <h3 class="mb-3 fw-bold text-secondary">隔離中毛爸媽好放心</h3>
+    <p class="text-light fw-bold mb-4">PetDay開放 短期/長期 保姆到府照護（詳情請見預約Q&A）</p>
+
+
+    <!-- swiper 評價輪播 -->
+    <div class="container">
+      <div class="swiper guest" id="period-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper salonguest">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-6.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light ">陳小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    還好有Pet Day，讓我即使因為不幸染疫，仍有專業保姆代我照顧我家狗狗!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-10.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                黃先生</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    謝謝Pet Day!知道要居隔時最煩惱的就是沒有人可以照顧我家貓咪。還好有專業保姆，真的幫了我大忙!
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review">
+              <img class="guest-img" src="img/guest-img-16.png" alt="guest-img">
+              <p class="mt-2 mb-2 fw-bold fs-5 text-light">
+                蔡小姐</p>
+              <ul class="rank d-flex justify-content-center ps-0">
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+                <li><img src="img/star.png" alt="star" class="star"></li>
+              </ul>
+              <div class="textarea row justify-content-center">
+                <div class="col-10">
+                  <p>
+                    有Pet Day真好!協助無微不至的照顧我家狗狗，讓我在居隔其間很安心與放心!
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg">
+    <div class="eventarea text-center">
+      <h2 class="fw-bold mb-3">首次登入預約<br>即刻贈送家訪服務！</h2> 
+      <p class="text-light fw-bold mb-5">不確定自己的毛孩適合什麼服務？<br>該如何了解毛孩的需求？<br>PetDay提供首次使用者可免費進行一次家訪服務<br>帶您一同深入瞭解毛孩們！</p>  
+      
+      <div class="eventbtn">
+        <button  class="btn detailbtn2 btn-outline-primary me-2"><a href="#">查看詳情</a></button>
+        <button  class="btn btn-primary me-2"><a href="f_signup.html">立即註冊</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+
+
+
+
+
+
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      //毛爸媽超推薦回饋
+      const swiper1 = new Swiper("#parent-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+
+
+
+
+
+      //毛孩社交圈 加入參數  
+      const swiper2 = new Swiper("#pet-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+
+
+      //隔離中爸媽
+      const swiper3 = new Swiper("#period-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+
+
+
+
+    }
+
+
+
+
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

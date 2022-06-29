@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="SCSS/all.css">
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Nuosu+SIL&display=swap"
+    rel="stylesheet">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/cdb04f631a.js" crossorigin="anonymous"></script>
+  <!-- jquery/js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="all.js"></script>
+
+  <style>
+
+  </style>
+
+
+  <title>Pet Day</title>
+</head>
+
+<body>
+  <div class="pagetop">
+    <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
+      <p class="ms-0 me-0">Page Top</p>
+    </a>
+  </div>
+  <div class="socialicon">
+    <div class="mb-3">
+      <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    </div>
+    <div class="mb-3">
+      <a href="#"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+  <header>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="logo"></a></h1>
+      <ul class="navbar">
+        <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="b1_salon.html">到府美容</a></li>
+            <li><a href="b2_sitting.html">到府照顧</a></li>
+            <li><a href="b3_walking.html">遛狗散步</a></li>
+            <li><a href="b4_clinic.html">醫療轉介</a></li>
+            <li><a href="b5_funeral.html">殯儀轉介</a></li>
+          </ul>
+        </li>
+        <li class="menu jq-clickBtn"><a class="menubtn" href="c_petsitter.html">寵物保姆</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="c1_intro.html" style="width:100px">介紹與評價</a></li>
+            <li><a href="c2_booking.html">預約服務</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="logo"></a></h1>
+
+      <ul class="navbar">
+        <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
+          <ul class="dropdownlist jq-dropdown">
+            <li><a href="d1_sitter.html">成為保姆</a></li>
+            <li><a href="d2_volunteer.html">成為志工</a></li>
+          </ul>
+        </li>
+        <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+      <!-- 漢堡選單圖示 -->
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></a>
+
+      <!-- 漢堡選單點擊後出現 -->
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+  </header>
+
+
+  <div class="container formwrap signform">
+
+
+    <div class="row justify-content-center">
+      <form class="pt-2 pb-5 col-md-8 col-xl-6 formdetail">
+        <h4 class="fw-bold">註冊新帳號</h4>
+        <div class="mb-3  d-flex justify-content-between">
+          <div class="col-5">
+          <label for="name" class="form-label fw-bolder">姓名</label>
+          <input type="text" class="form-control" required="required" placeholder="請輸入您的完整姓名" id="name">
+          </div>
+
+          <div class="col-6">
+          <label for="telphone" class="form-label fw-bolder">電話</label>
+          <input type="tel" class="form-control" required="required" placeholder="請輸入您的聯絡電話" id="telphone">
+          </div>
+
+        </div>
+
+        <!-- 所在城市/區 -->
+        <div class="mb-3 d-flex justify-content-between">
+          <div class="col-6">
+            <label for="telphone" class="form-label fw-bolder">所在城市</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>城市</option>
+              <option value="1">台北市</option>
+              <option value="2">新北市</option>
+              <option value="3">桃園市</option>
+            </select>
+          </div>
+
+
+          <div class="col-5">
+            <label for="telphone" class="form-label fw-bolder">行政區</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>區</option>
+              <!-- <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option> -->
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          
+          <label for="account" class="form-label fw-bolder">帳號</label>
+          <input type="text" class="form-control" required="required" placeholder="example@mail.com" id="account">
+         
+
+        </div>
+
+
+       
+
+        <div class="mb-3">
+          <label for="password" class="form-label fw-bolder">設定密碼</label>
+          <input type="password" class="form-control" required="required" placeholder="6-18 位數密碼，請區分大小寫" id="password">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label fw-bolder">確認密碼</label>
+          <input type="password" class="form-control" required="required" placeholder="請再次輸入您的密碼" id="password">
+        </div>
+
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+          <label class="form-check-label" for="exampleCheck1">
+          我已閱讀並同意<a href="#">服務條款</a>及<a href="#">隱私權政策</a>
+          
+        </label>
+        </div>
+        <div class="submitarea d-flex align-items-center">
+          <button type="submit" class="btn btn-primary me-2">完成</button>
+          <a class="text-secondary" href="f_login.html">已有帳號?登入請按此></a>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg insignpage"></div>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

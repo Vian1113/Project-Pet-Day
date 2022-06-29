@@ -1,0 +1,66 @@
+.socialicon {
+  
+  position: fixed;
+  top: 60px;
+  left: 25px;
+  padding: 16px 6px;
+  z-index: 100;
+
+
+}
+
+.pagetop {
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  
+
+  img {
+      margin-bottom: 8px;
+  }
+
+  p {
+      font-family: 'Nuosu SIL', serif;
+      writing-mode: vertical-lr;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: black;
+  }
+}
+
+.formwrap{
+  position: absolute;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+
+  
+}
+
+.formdetail{
+    background-color: rgba(255,255,255,.5);
+    border-radius: 10px;
+    backdrop-filter:blur(5px);
+    .form-label:after { 
+        content: ' *'; 
+        color: #464A53;
+        font-size: 80%; 
+    } 
+}
+
+.submitarea{
+  a:hover{
+    text-decoration: underline;
+    
+    
+  }
+}
+
+
+
+
+
+

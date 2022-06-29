@@ -1,0 +1,72 @@
+.petsitterbg {
+    height: 750px;
+    width: 100%;
+    background-image: url(../img/bgimage-12.png);
+    background-repeat: no-repeat;
+    background-position: 15% 25%;
+    background-size: 48%;
+    @include large() {
+        height:520px;
+    }
+
+
+    .heroarea {
+        position: absolute;
+        top: 300px;
+        right: 15%;
+        z-index: 5;
+        text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+
+
+        @include extralargebig() {
+            top:239px;
+            right:5%;
+        }
+
+        @include large() {
+            top:173px;
+            right:2%;
+        }
+    }
+}
+
+.container{
+    .subtitle{
+        //font-weight: 600;
+        color: #757575;
+    }
+
+    .multiitem{
+        p{
+            color:#757575;
+        }
+    }
+}
+
+.eventarea{
+
+    .detailbtn2 {
+        border: 2px dashed #F6D470;
+        background-color: #FBF9F7;
+        &:hover{
+            background-color: #F6D470;
+            a{
+                color:#ffffff;
+            }
+        }
+    
+        a {
+            color: #F6D470;
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

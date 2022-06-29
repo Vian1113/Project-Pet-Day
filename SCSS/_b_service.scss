@@ -36,13 +36,23 @@
     @include large() {
         gap: 10px;
     }
+
+    img{
+        max-width:70%;
+    }
 }
 
 .booking a {
     @include large() {
-        width: 120px;
-        font-size: 1rem;
+        width: 80px;
+        font-size: 0.8rem;
     }
+
+    @include smallsize() {
+        width: 65px;
+        font-size: 0.5rem;
+    }
+
 }
 
 //服務內容引言

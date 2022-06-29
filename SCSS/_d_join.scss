@@ -1,0 +1,165 @@
+.joinbg {
+    height: 820px;
+    width: 100%;
+    background-image: url(../img/bgimage-15.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+
+
+    @include extralargebig() {
+        height: 665px;
+    }
+
+
+    @include large() {
+        height: 590px;
+    }
+
+
+
+    @include mediumsize() {
+        height: 438px;
+    }
+
+
+
+    .heroarea {
+        position: absolute;
+        top: 300px;
+        right: 15%;
+        z-index: 5;
+        text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+
+        @include extraextralarge() {
+            top: 260px;
+            right: 20%;
+        }
+
+        @include extralargebig() {
+
+            right: 10%;
+        }
+
+
+
+
+
+    }
+
+}
+
+.joinlist {
+    li {
+        border-radius: 10px;
+    }
+
+
+}
+
+.joinform {
+    border: 3px dashed #F6D470;
+    border-radius: 30px;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .joinitem {
+        margin: 0 auto;
+    }
+
+    .input-group{
+        width:none;
+    }
+
+    
+}
+
+.join-img{
+    max-width: 15%;
+}
+
+
+.joinad {
+    background-color: #ffffff;
+}
+
+
+
+.form-check .form-check-input {
+    float: none;
+
+}
+
+.reviewname {
+    gap: 15px;
+}
+
+.qualitybanner {
+
+    background-image: url("../img/bgimage-16.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+    height: 290px;
+    width: 100%;
+    position: relative;
+
+    .textarea {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        color: #ffffff;
+
+        button {
+            color: #ffffff;
+        }
+
+        @include mediumsize {
+
+            h3 {
+                font-size: 0.8rem;
+            }
+
+            p {
+                font-size: 0.5rem;
+            }
+
+            .btn {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+
+}
+
+.quality{
+    position: relative;
+    z-index:3;
+
+    .quiltyitem{
+        
+            p{
+                text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+            }
+        
+    }
+}
+
+
+.qualityimg {
+    position: absolute;
+    width: 45%;
+    top: 135px;
+
+}
+
+
+
+.joinfaq {
+    margin-top: 100px;
+    
+    
+}
