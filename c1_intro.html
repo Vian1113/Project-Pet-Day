@@ -28,7 +28,7 @@
   <script src="all.js"></script>
 
   <style>
-   
+
   </style>
 
 
@@ -36,12 +36,12 @@
 </head>
 
 <body>
-  <div class="pagetop">
+  <div id="pagetop">
     <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
       <p class="ms-0 me-0">Page Top</p>
     </a>
   </div>
-  <div class="socialicon">
+  <div id="socialicon">
     <div class="mb-3">
       <a href="#"><img src="img/facebook.png" alt="facebook"></a>
     </div>
@@ -49,12 +49,27 @@
       <a href="#"><img src="img/instagram.png" alt="instagram"></a>
     </div>
     <div class="mb-3">
-      <a href="index.html"><img src="img/home-2.png" alt="home"></a>
+      <a href="#"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+  <div id="fixedicon">
+    <div class="icon text-center">
+      <a href="index"><img src="./img/home-1.png" alt="home"></a>
+      <p>Home</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/chat.png" alt="chats"></a>
+      <p>Chats</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/call.png" alt="calls"></a>
+      <p>Calls</p>
     </div>
   </div>
   <header>
     <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
-      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png" alt="home"></a></h1>
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="home"></a></h1>
       <ul class="navbar">
         <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
         <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
@@ -87,88 +102,519 @@
       </ul>
 
       <!-- 漢堡選單圖示 -->
-      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-list" viewBox="0 0 16 16">
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg></a>
 
       <!-- 漢堡選單點擊後出現 -->
-      
-        <ul class="navmobile text-center">
-          <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
-        </ul>
-      
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+    <div class="introarea text-start">
+      <h2 class="fw-bold mb-3 text-secondary">專業實名制認證<br>貼心保姆只在PetDay！</h2>
+      <p class="fw-bolder mb-2 ">專業的寵物保母，還在擔心無法照顧毛孩嗎 ? <br>為您客製化想要的服務，快來立即預約吧!</p>
+      <div class="eventbtn">
+        <button class="btn btn-secondary me-2"><a href="c2_booking.html">立即預約</a></button>
+
+      </div>
+
+    </div>
+
+    <div class="header-bg">
+      <div class="swiper">
+
+        <div class="swiper-slide">
+          <img src="img/bgimage-17.png" alt="bgimage-17">
+        </div>
+      </div>
 
     </div>
 
   </header>
 
-  
-  <div class="container-fluid p-0">
-    
-    <a href="c_petsitter.html">
-    <img src="img/c_intro-1.png" alt="保姆介紹與評價">
-    <img src="img/c_intro-2.png" alt="保姆介紹與評價">
-    <img src="img/c_intro-3.png" alt="保姆介紹與評價">
-    <img src="img/c_intro-4.png" alt="保姆介紹與評價">
-    <img src="img/c_intro-5.png" alt="保姆介紹與評價">
-    </a>
-    
-   
-   
-   
+  <!-- 毛爸媽認證滿分 -->
+  <div class="container text-center">
+
+    <h3 class="mb-3 mt-5 fw-bold ">毛爸媽認證滿分保姆No.1 排行</h3>
+    <p class="subtitle fw-bold">網路好評不斷 !!! 快來看看用戶怎麼說~</p>
+
+
+    <div class="parent d-flex container justify-content-around mt-4 align-items-center">
+      <img class="col-5" src="img/guest-img-19.png" alt="guest-19">
+      <!-- 評價輪播 -->
+      <div class="col-5">
+        <div class="swiper guest" id="comment-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper joinguest">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">王小愛</p>
+                      <p class="text-light ">飼主用戶</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      只要出遠門需要照顧貓咪，第一時間就是想到Apple, 不管是我家貓咪的飲食還是環境都幫忙打點的非常妥當， 連我家的貓咪非常怕陌生人Apple都能很有耐心的陪牠們玩耍、餵藥，
+                      有照顧毛小孩的需求找Apple就對囉
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">邱哲</p>
+                      <p class="text-light ">飼主用戶</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      超級推薦！貓貓們在家看到保姆姊姊宣宣依然自在的走動，都不怕生，保姆姊姊讀懂貓咪們的語言，相處起來舒服不生疏😁牠們依然玩的很開心，整個貓精神超好，還會撒嬌，姊姊也會拍照貓貓情況給我們看，令人安心～
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">張大千</p>
+                      <p class="text-light ">飼主用戶</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      事前有告知Demi我的其中一隻貓常會擔心別人跟牠搶食而狼吞虎嚥，隨後又吐得到處都是，於是她就在餵飼料時特地陪在那隻貓身邊安撫牠，回家後三隻貓的情緒都很平靜，沒有表現出有陌生人來過的緊張，貓砂盆跟周圍的地板也有幫我清乾淨👍
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review col-10 mx-auto ">
+                <div class="textarea row justify-content-center">
+                  <div class="reviewname d-flex align-items-center col-10 mb-2">
+                    <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                    <div class="joinname d-flex flex-column align-items-start">
+                      <p class="mt-2  fw-bold fs-5 text-light ">李千娜娜</p>
+                      <p class="text-light ">飼主用戶</p>
+                    </div>
+                  </div>
+                  <div class="col-10 text-start">
+                    <p>
+                      我家貓很膽小，幸好有這樣的服務，才能讓我們短期回南部看長輩，事前家訪很準時，討論蠻細，也有建議搭配寵物攝影機。兩次餵食跟貓砂清潔很快速的完成，貓也沒有到非常緊張，喵幾下就願意從藏身處出來吃飯，比以前好很多。很感謝彩彩！
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination" id="sitterpage"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+
   </div>
- 
 
-  
+  <!-- 毛爸媽認證滿分-第二塊 -->
+
+  <div class="parent-2 d-flex flex-row-reverse container-fluid justify-content-around mt-5 align-items-center">
+    <img class="col-5 pt-5 pb-5" src="img/guest-img-20.png" alt="guest-20">
+    <!-- 評價輪播 -->
+    <div class="col-5">
+      <div class="swiper guest" id="comment-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper joinguest">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">邱哲</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    超級推薦！貓貓們在家看到保姆姊姊宣宣依然自在的走動，都不怕生，保姆姊姊讀懂貓咪們的語言，相處起來舒服不生疏😁牠們依然玩的很開心，整個貓精神超好，還會撒嬌，姊姊也會拍照貓貓情況給我們看，令人安心～
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">張大千</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    事前有告知Demi我的其中一隻貓常會擔心別人跟牠搶食而狼吞虎嚥，隨後又吐得到處都是，於是她就在餵飼料時特地陪在那隻貓身邊安撫牠，回家後三隻貓的情緒都很平靜，沒有表現出有陌生人來過的緊張，貓砂盆跟周圍的地板也有幫我清乾淨👍
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">李千娜娜</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    我家貓很膽小，幸好有這樣的服務，才能讓我們短期回南部看長輩，事前家訪很準時，討論蠻細，也有建議搭配寵物攝影機。兩次餵食跟貓砂清潔很快速的完成，貓也沒有到非常緊張，喵幾下就願意從藏身處出來吃飯，比以前好很多。很感謝彩彩！
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
 
 
 
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
-
-<!-- footer -->
-<div class="footerimg">
-  <div class="eventarea text-center">
-    <h2 class="fw-bold mb-3">首次登入預約<br>即刻贈送家訪服務！</h2> 
-    <p class="text-light fw-bold mb-5">不確定自己的毛孩適合什麼服務？<br>該如何了解毛孩的需求？<br>PetDay提供首次使用者可免費進行一次家訪服務<br>帶您一同深入瞭解毛孩們！</p>  
-    
-    <div class="eventbtn">
-      <button  class="btn detailbtn2 btn-outline-primary me-2"><a href="#">查看詳情</a></button>
-      <button  class="btn btn-primary me-2"><a href="f_signup.html">立即註冊</a></button>
     </div>
   </div>
-</div>
+
+  <!-- 毛爸媽認證滿分-第三塊 -->
+  <div class="parent d-flex  container justify-content-around mt-2 align-items-center">
+    <img class="col-5 pt-5" src="img/guest-img-21.png" alt="guest-21">
+    <!-- 評價輪播 -->
+    <div class="col-5">
+      <div class="swiper guest" id="comment-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper joinguest">
+          <!-- Slides -->
+
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">張大千</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    事前有告知Demi我的其中一隻貓常會擔心別人跟牠搶食而狼吞虎嚥，隨後又吐得到處都是，於是她就在餵飼料時特地陪在那隻貓身邊安撫牠，回家後三隻貓的情緒都很平靜，沒有表現出有陌生人來過的緊張，貓砂盆跟周圍的地板也有幫我清乾淨👍
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">李千娜娜</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    我家貓很膽小，幸好有這樣的服務，才能讓我們短期回南部看長輩，事前家訪很準時，討論蠻細，也有建議搭配寵物攝影機。兩次餵食跟貓砂清潔很快速的完成，貓也沒有到非常緊張，喵幾下就願意從藏身處出來吃飯，比以前好很多。很感謝彩彩！
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
 
 
 
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
-<div class="footer">
-  <div class="container-fluid">
-    <div class="d-flex align-items-center justify-content-between ">
-      <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
-        <li class="item me-2"><a href="b_service.html">服務內容</a></li>
-        <span>|</span>
-        <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
-        <span>|</span>
-        <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
-      </ul>
-      <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
     </div>
   </div>
-</div>
+
+  <!-- 毛爸媽認證滿分-第四塊 -->
+  <div class="parent-4 d-flex flex-row-reverse container-fluid justify-content-around mt-5 align-items-center">
+    <img class="col-5 pt-5 pb-5" src="img/guest-img-22.png" alt="guest-22">
+    <!-- 評價輪播 -->
+    <div class="col-5">
+      <div class="swiper guest" id="comment-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper joinguest">
+          <!-- Slides -->
+
+          
+
+          
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">李千娜娜</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    我家貓很膽小，幸好有這樣的服務，才能讓我們短期回南部看長輩，事前家訪很準時，討論蠻細，也有建議搭配寵物攝影機。兩次餵食跟貓砂清潔很快速的完成，貓也沒有到非常緊張，喵幾下就願意從藏身處出來吃飯，比以前好很多。很感謝彩彩！
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review col-10 mx-auto ">
+              <div class="textarea row justify-content-center">
+                <div class="reviewname d-flex align-items-center col-10 mb-2">
+                  <img class="join-img" src="img/guest-img-18.png" alt="join-img">
+                  <div class="joinname d-flex flex-column align-items-start">
+                    <p class="mt-2  fw-bold fs-5 text-light ">邱哲</p>
+                    <p class="text-light ">飼主用戶</p>
+                  </div>
+                </div>
+                <div class="col-10 text-start">
+                  <p>
+                    超級推薦！貓貓們在家看到保姆姊姊宣宣依然自在的走動，都不怕生，保姆姊姊讀懂貓咪們的語言，相處起來舒服不生疏😁牠們依然玩的很開心，整個貓精神超好，還會撒嬌，姊姊也會拍照貓貓情況給我們看，令人安心～
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
 
-  
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="sitterpage"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg">
+    <div class="eventarea text-center">
+      <h2 class="fw-bold mb-3">首次登入預約<br>即刻贈送家訪服務！</h2>
+      <p class="text-light fw-bold mb-5">不確定自己的毛孩適合什麼服務？<br>該如何了解毛孩的需求？<br>PetDay提供首次使用者可免費進行一次家訪服務<br>帶您一同深入瞭解毛孩們！</p>
+
+      <div class="eventbtn">
+        <button class="btn detailbtn2 btn-outline-primary me-2"><a href="#">查看詳情</a></button>
+        <button class="btn btn-primary me-2"><a href="f_signup.html">立即註冊</a></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+
+    //顧客評價 加入參數  
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      const swiper = new Swiper("#comment-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 1 欄 */
+          992: {
+            slidesPerView: 1
+          },
+
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+    }
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
 
 
 

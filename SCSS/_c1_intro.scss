@@ -1,0 +1,37 @@
+.introarea {
+  position: absolute;
+  top: 300px;
+  left: 10%;
+  z-index: 5;
+  color: #ffffff;
+
+  h2 {
+    text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+  }
+
+  p{
+    text-shadow: 1px 1px 0 #757575, -1px -1px 0 #757575;
+  }
+
+
+  @include mediumsize(){
+    top:205px;
+  }
+
+  @include large() {
+    top: 169px;
+  }
+
+  @include smallsize() {
+    top: 98px;
+  }
+
+
+
+
+}
+
+.parent-2,
+.parent-4 {
+  background: #FFFFFF;
+}
