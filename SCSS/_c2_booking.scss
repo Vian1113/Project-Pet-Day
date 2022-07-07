@@ -1,0 +1,66 @@
+.bookbar {
+
+    max-width: 70%;
+    margin: 0 auto;
+    gap: 15px;
+    background-color: #FBF9F7;
+    border-radius: 12px;
+    border: 2px solid #8D6B52;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    box-shadow: -1px 5px 8px -2px rgba(30, 23, 17, 0.66);
+
+
+
+    @include large() {
+        top: 100%;
+        max-width: 90%;
+
+    }
+
+    @include smallsize() {
+        font-size: 0.8rem;
+        .option:after{
+            right:3px
+        }
+
+        .option select{
+            padding-left: 3px;
+        }
+    }
+
+}
+
+
+
+.visit {
+    background-color: #8D6B52;
+}
+
+.explain {
+
+    color: #FFFFFF;
+
+    @include mediumsize() {
+        h3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.5rem;
+        }
+    }
+
+}
+
+.bookingstep {
+    a {
+        color: #212121;
+
+        &:hover {
+            color: #F6D470;
+        }
+    }
+}

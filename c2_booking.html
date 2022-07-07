@@ -28,20 +28,20 @@
   <script src="all.js"></script>
 
   <style>
-   
+
   </style>
 
 
   <title>Pet Day</title>
 </head>
 
-<body style="background-color:#ffffff">
-  <div class="pagetop">
+<body>
+  <div id="pagetop">
     <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
       <p class="ms-0 me-0">Page Top</p>
     </a>
   </div>
-  <div class="socialicon">
+  <div id="socialicon">
     <div class="mb-3">
       <a href="#"><img src="img/facebook.png" alt="facebook"></a>
     </div>
@@ -49,12 +49,27 @@
       <a href="#"><img src="img/instagram.png" alt="instagram"></a>
     </div>
     <div class="mb-3">
-      <a href="index.html"><img src="img/home-2.png" alt="home"></a>
+      <a href="#"><img src="img/home-2.png" alt="home"></a>
+    </div>
+  </div>
+  <div id="fixedicon">
+    <div class="icon text-center">
+      <a href="index"><img src="./img/home-1.png" alt="home"></a>
+      <p>Home</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/chat.png" alt="chats"></a>
+      <p>Chats</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/call.png" alt="calls"></a>
+      <p>Calls</p>
     </div>
   </div>
   <header>
     <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
-      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png" alt="home"></a></h1>
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="home"></a></h1>
       <ul class="navbar">
         <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
         <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
@@ -87,79 +102,326 @@
       </ul>
 
       <!-- 漢堡選單圖示 -->
-      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-list" viewBox="0 0 16 16">
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg></a>
 
       <!-- 漢堡選單點擊後出現 -->
-      
-        <ul class="navmobile text-center">
-          <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
-        </ul>
-      
+
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+    <div class="solgan text-center ">
+      <h2 class="fw-bold mb-3 text-dark">隨時隨地一鍵預約<br>貼心保姆到府服務！</h2>
+      <p class="fw-bolder mb-4 text-light">定位您所在的位址，讓 PET DAY 依據您的毛孩種類、體型<br>挑選最適合您的寵物保母!!</p>
+
+    </div>
+
+    <!-- 搜尋欄位 -->
+    <div class="d-flex justify-content-center bookbar pt-4 pb-4 ps-2 pe-2">
+      <div class="option">
+        <select name="location">
+          <option selected>所在地</option>
+          <option value="1">台北市</option>
+          <option value="2">新北市</option>
+          <option value="3">桃園市</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <select name="servicetype">
+          <option selected>服務類型</option>
+          <option value="1">到府美容</option>
+          <option value="2">到府照顧</option>
+          <option value="3">遛狗散步</option>
+          <option value="4">醫療轉介</option>
+          <option value="5">殯儀轉介</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <select name="type">
+          <option selected>寵物類型</option>
+          <option value="1">貓</option>
+          <option value="2">犬</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <select name="size">
+          <option selected>寵物體型</option>
+          <option value="1">小型</option>
+          <option value="2">中型</option>
+          <option value="3">大型</option>
+        </select>
+      </div>
+
+      <div class="searchbtn">
+        <p><a href="#">搜尋<span style="color:transparent;">s</span><i
+              class="fa-solid fa-magnifying-glass fa-search"></i></a></p>
+
+      </div>
+
+
+    </div>
+
+    <div class="header-bg">
+      <div class="swiper">
+
+        <div class="swiper-slide">
+          <img src="img/bgimage-18.png" alt="bgimage-18">
+        </div>
+      </div>
 
     </div>
 
   </header>
 
-  
-  <div class="container-fluid p-0">
-    
-    <a href="c_petsitter.html">
-    <img src="img/c2_booking-1.png" alt="預訂服務">
-    <img src="img/c2_booking-2.png" alt="預訂服務">
-    <img src="img/c2_booking-3.png" alt="預訂服務">
-    <img src="img/c2_booking-4.png" alt="預訂服務">
-    
-    </a>
-    
-   
-   
-   
+  <!-- 預約流程 -->
+  <div class="container-fluid text-center mt-3 pt-5 bookingstep">
+    <h3 class="mb-3 mt-3 fw-bold ">預約流程化繁為簡<br>安全安心有保障</h3>
+    <p class="fw-bold text-light">登入您的會員資料，讓預約流程更加方便快速。</p>
+
+    <ul class="row ps-0 justify-content-center mt-4 align-items-end">
+      <li class="col-4 mb-3">
+        <a href="f_login.html">
+          <img src="img/booking-1.png" alt="bookingprocess">
+          <h4 class="fw-bold mt-2">登錄 / 註冊</h4>
+        </a>
+
+      </li>
+      <li class="col-4 mb-3">
+        <a href="#">
+          <img src="img/booking-2.png" alt="bookingprocess">
+          <h4 class="fw-bold mt-2">會員頁面資料</h4>
+        </a>
+      </li>
+      <li class="col-4 mb-3">
+        <a href="#">
+          <img src="img/booking-3.png" alt="bookingprocess">
+          <h4 class="fw-bold mt-2">服務搜尋、預約</h4>
+        </a>
+
+      </li>
+    </ul>
+
   </div>
- 
 
-  
+  <!-- 免費體家訪 -->
+  <div class=" container text-center mx-auto pt-5">
+    <h3 class="mb-3 mt-3 fw-bold ">首次使用免費體驗家訪服務</h3>
+    <p class="fw-bold text-light">擔心毛孩不習慣與陌生人接觸，Pet Day 提供一次家庭拜訪服務，也讓您更了解您的寵物寶貝。</p>
 
-
-
-
-
-
-
-<!-- footer -->
-
-
-
-
+    <div class="visit col-10 d-flex mx-auto justify-content-center align-items-center mt-4">
+      <div class="explain col-5 text-start mx-auto">
+        <h3>什麼是家訪服務？</h3>
+        <p>讓毛孩認識即將服務的保姆，<br>進行減敏互動增加毛孩對保姆們的信任。<br><br>每次更換保姆時將會重新安排家訪服務，<br>穩定毛孩的情緒。</p>
+      </div>
+      <img class="col-6" src="img/booking-4.png" alt="visitexplain">
+    </div>
 
 
-<div class="footerimg"></div>
 
-<div class="footer">
-  <div class="container-fluid">
-    <div class="d-flex align-items-center justify-content-between ">
-      <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
-        <li class="item me-2"><a href="b_service.html">服務內容</a></li>
-        <span>|</span>
-        <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
-        <span>|</span>
-        <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
-      </ul>
-      <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+  </div>
+
+
+  <!-- 預約QA -->
+  <div class="container text-center joinfaq">
+    <div class="row justify-content-center align-items-center ">
+      <div class="col-5">
+        <h3 class="mb-3 fw-bold ">預約流程 Q&A</h3>
+        <p class="subtitle fw-bold mb-4">預約流程相關問題，立即幫您處理問題!!</p>
+      </div>
+
+
+      <div class="col-6 text-start">
+        <ul class="ps-0 col-10 pe-0">
+          <li class="list mb-3">
+            <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+              <h5 class="mb-3 mt-3 fw-bold">要如何付款預訂?</h5>
+              <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+            </div>
+            <p class="faqdetail text-start ps-3 pe-3 pb-3">
+              點選頁面上的「預約服務」，填妥頁面資料後，會自動導入付款頁面，目前付款方式僅提供線上刷卡或轉帳。收到訂單成立通知後服務即預訂完成。</p>
+          </li>
+
+          <li class="list mb-3">
+            <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+              <h5 class="mb-3 mt-3 fw-bold">怎麼保障主人權益 ?</h5>
+              <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+            </div>
+            <p class="faqdetail text-start ps-3 pe-3 pb-3">
+              所有Pet Day 平台內的付費服務皆包含保險與保障。
+
+            </p>
+          </li>
+          <li class="list mb-3">
+            <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center  ps-3 pe-3">
+              <h5 class="mb-3 mt-3 fw-bold"> 預約後若想取消怎麼辦?</h5>
+              <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+            </div>
+            <p class="faqdetail text-start ps-3 pe-3 pb-3">於服務開始前三天皆可進行訂單取消或修改。如未於期限前完成，將酌收費用。若有不可抗力之因素再請您與客服人員聯絡。
+            </p>
+          </li>
+          <li class="list mb-3">
+            <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+              <h5 class="mb-3 mt-3 fw-bold">預訂保姆要多少錢 ? </h5>
+              <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+            </div>
+            <p class="faqdetail text-start ps-3 pe-3 pb-3">
+              遛狗散步：＄150/每次 起，每次最少半小時，保姆自行依能力、經驗與專業設定單價，超過半小時可加購。<br>
+              到府美容：＄350/每次 起，每次最少1小時。保姆自行依能力、經驗、專業與寵物種類與體型設定定價，超過1小時可加購。<br>
+              到府照顧：＄450/每次 起，每次最少半小時。保姆自行依能力、經驗、專業與寵物種類與體型設定定價，超過半小時可加購。</p>
+          </li>
+          <li class="list mb-3">
+            <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+              <h5 class="mb-3 mt-3 fw-bold itemtitle">我可以付給保姆現金嗎 ?</h5>
+              <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+            </div>
+            <p class="faqdetail text-start ps-3 pe-3 pb-3">目前付款方式僅提供線上刷卡或轉帳。</p>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg">
+    <div class="eventarea text-center">
+      <h2 class="fw-bold mb-3">首次登入預約<br>即刻贈送家訪服務！</h2>
+      <p class="text-light fw-bold mb-5">不確定自己的毛孩適合什麼服務？<br>該如何了解毛孩的需求？<br>PetDay提供首次使用者可免費進行一次家訪服務<br>帶您一同深入瞭解毛孩們！
+      </p>
+
+      <div class="eventbtn">
+        <button class="btn detailbtn2 btn-outline-primary me-2"><a href="#">查看詳情</a></button>
+        <button class="btn btn-primary me-2"><a href="f_signup.html">立即註冊</a></button>
+      </div>
     </div>
   </div>
-</div>
 
 
-  
+
+
+
+
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between ">
+        <ul class="footernav d-flex mt-2 ps-0 pe-0 mb-0">
+          <li class="item me-2"><a href="b_service.html">服務內容</a></li>
+          <span>|</span>
+          <li class="item ms-2 me-2"><a href="c_petsitter.html">寵物保姆</a></li>
+          <span>|</span>
+          <li class="item ms-2"><a href="f_login.html">登入/註冊</a></li>
+        </ul>
+        <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+
+    //顧客評價 加入參數  
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      const swiper = new Swiper("#comment-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 1 欄 */
+          992: {
+            slidesPerView: 1
+          },
+
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+    }
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
 
 
 
