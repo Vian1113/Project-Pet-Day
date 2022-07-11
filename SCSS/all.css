@@ -12199,6 +12199,38 @@ svg {
   background-image: url("../img/bgimage-20.png");
 }
 
+.joinvolunteerbg {
+  height: 905px;
+  width: 100%;
+  background-image: url(../img/bgimage-21.png);
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+}
+.joinvolunteerbg .joinsolgan {
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.joinvolunteerbg .joinsolgan h2, .joinvolunteerbg .joinsolgan .h2 {
+  text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+}
+
+.volunteerbg {
+  max-width: 500px;
+  height: 300px;
+}
+
+.volunteerbanner {
+  background-image: url("../img/bgimage-23.png");
+}
+.volunteerbanner .textarea {
+  left: 40%;
+}
+
+.volunteerwrap {
+  background-color: #fff;
+}
+
 .petsitterbg {
   height: 750px;
   width: 100%;

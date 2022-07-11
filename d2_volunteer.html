@@ -28,7 +28,7 @@
   <script src="all.js"></script>
 
   <style>
-   
+
   </style>
 
 
@@ -36,12 +36,12 @@
 </head>
 
 <body>
-  <!-- <div class="pagetop">
+  <div id="pagetop">
     <a class="pagetopbtn" href="#"><img src="img/pagetop.png" alt="pagetop">
       <p class="ms-0 me-0">Page Top</p>
     </a>
   </div>
-  <div class="socialicon">
+  <div id="socialicon">
     <div class="mb-3">
       <a href="#"><img src="img/facebook.png" alt="facebook"></a>
     </div>
@@ -51,10 +51,28 @@
     <div class="mb-3">
       <a href="index.html"><img src="img/home-2.png" alt="home"></a>
     </div>
-  </div> -->
+  </div>
+
+  <!-- 浮動快捷icon -->
+  <div id="fixedicon">
+    <div class="icon text-center">
+      <a href="index.html"><img src="./img/home-1.png" alt="home"></a>
+      <p>Home</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/chat.png" alt="chats"></a>
+      <p>Chats</p>
+    </div>
+    <div class="icon text-center">
+      <a href="#"><img src="./img/call.png" alt="calls"></a>
+      <p>Calls</p>
+    </div>
+  </div>
+
   <header>
-    <!-- <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
-      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png" alt="home"></a></h1>
+    <div class="nav container-fluid  justify-content-between justify-content-md-center align-items-center">
+      <h1 class="logowhite ms-2 mb-0 d-md-none"><a class="menubtn" href="index.html"><img src="img/logo-4.png"
+            alt="home"></a></h1>
       <ul class="navbar">
         <li class="menu"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
         <li class="menu jq-clickBtn"><a class="menubtn" href="b_service.html">服務內容</a>
@@ -73,7 +91,7 @@
           </ul>
         </li>
       </ul>
-      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt=""></a></h1>
+      <h1 class="logo "><a class="menubtn" href="index.html"><img src="img/logo-2.png" alt="home"></a></h1>
 
       <ul class="navbar">
         <li class="menu jq-clickBtn"><a class="menubtn" href="d_join.html">徵召助力</a>
@@ -84,43 +102,207 @@
         </li>
         <li class="menu"><a class="menubtn" href="e_faq.html">常見問題</a></li>
         <li class="menu"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
-      </ul> -->
+      </ul>
 
       <!-- 漢堡選單圖示 -->
-      <!-- <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-list" viewBox="0 0 16 16">
+      <a href="#" class="hambar"><svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg></a> -->
+        </svg></a>
 
       <!-- 漢堡選單點擊後出現 -->
-      
-        <!-- <ul class="navmobile text-center">
-          <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
-          <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
-        </ul>
-      
 
-    </div> -->
+      <ul class="navmobile text-center">
+        <li class="menu mb-2"><a class="menubtn" href="a_about.html">關於PetDay</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="b_service.html">服務內容</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="c_petsitter.html">寵物保姆</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="d_join.html">徵召助力</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="e_faq.html">常見問題</a></li>
+        <li class="menu mb-2"><a class="menubtn" href="f_login.html">登入/註冊</a></li>
+      </ul>
+
+
+    </div>
+
+
+    <div class="header-bg join-bg">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="joinvolunteerbg">
+            <div class="solgan joinsolgan  text-center">
+              <h2 class="fw-bold mb-3 text-secondary">加入PetDay 志工行列<br>一同揮發並實踐更多愛心！</h2>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 表單 -->
+    <div class="container text-center joincontent">
+      <div class="row justify-content-center">
+        <form class="formdetail joinform col-lg-8 col-10">
+          <h4 class="fw-bold mt-5">填寫表單</h4>
+          <div class="mb-3 text-start col-10 joinitem">
+            <label for="account" class="form-label">帳號信箱</label>
+            <input type="email" class="form-control" id="account" placeholder="example@mail.com" required="required">
+
+          </div>
+          <div class="mb-3 text-start col-10 joinitem">
+            <label for="accountname" class="form-label">帳號名稱</label>
+            <input type="text" class="form-control" id="accountname" placeholder="example@mail.com" required="required">
+          </div>
+          <div class="mb-3 text-start col-10 joinitem">
+            <label for="name" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="請輸入您的完整姓名" required="required">
+          </div>
+          <div class="mb-3 text-start col-10 joinitem">
+            <label for="phone" class="form-label">聯絡電話</label>
+            <input type="tel" class="form-control" id="phone" placeholder="請輸入您的聯絡電話" required="required">
+          </div>
+          <div class="mb-3 text-start col-10 joinitem">
+            <label for="idinput" class="form-label" type="file">上傳認證資料（身分證、駕照、健保卡擇一）</label>
+            <input type="file" class="form-control" id="inputGroupFile02" required="required">
+
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+            <label class="form-check-label" for="exampleCheck1">相關條款閱讀完畢後請勾選</label>
+          </div>
+          <div class="submitarea d-flex align-items-center mb-3 justify-content-center">
+            <button type="submit" class="btn btn-primary me-2 ">送出</button>
+            <button type="reset" class="btn btn-outline-primary">取消</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
 
   </header>
 
-  
-  <div class="container">
-    <a href="d_join.html">
-    <img src="img/d2_volunteer.png" alt="成為志工">
-    </a>
-   
-   
-   
+
+
+  <!-- 為什麼要加入我們的志工行列？ -->
+  <div class="container text-center mt-7">
+    <h3 class="mb-3 mt-3 fw-bold ">為什麼要加入我們的志工行列？<br>更多救援配合、急診合作、與雙週領養會！</h3>
+    <p class="subtitle fw-bold">讓我們同心協力，浪浪不再擔心受怕</p>
+    <div class="multiservice row d-flex justify-content-around align-items-center mt-3">
+
+      <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center">
+        
+        <img class="me-3" src="img/icon-14.png" alt="龐大的志工家庭">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">龐大的志工家庭</h5>
+          <p>凝聚起每一位志工的努力與愛心，加入PetDay一齊互相幫忙，友愛大家庭！</p>
+        </div>
+      </div>
+      <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center ">
+        <img class="me-3" src="img/icon-15.png" alt="24小時急診合作優惠">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">24小時急診合作優惠</h5>
+          <p>與全台124間寵物診所合作，只要是身為PetDay志工行列的你，我們將協助30%的醫療費用</p>
+        </div>
+      </div>
+      <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center ">
+        <img class="me-3" src="img/icon-16.png" alt="幼犬幼貓免費健檢">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">幼犬幼貓免費健檢</h5>
+          <p>專門提供給流浪新生幼犬幼貓的基礎健康檢查，詳細診所名單請見下方資料</p>
+        </div>
+      </div>
+      <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center">
+        <img class="me-3" src="img/icon-17.png" alt="合作診所看診優惠">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">合作診所看診優惠</h5>
+          <p>與全台124間寵物診所合作，只要是身為PetDay志工行列的你，我們將協助30%的醫療費用</p>
+        </div>
+      </div>
+      <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center ">
+        <img class="me-3" src="img/icon-18.png" alt="每兩週一場領養會">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">每兩週一場領養會</h5>
+          <p>你沒看錯，每隔週我們將在大安森林公園置辦大型領養會，請各位志工踴躍報名！</p>
+        </div>
+      </div>
+      <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center">
+        <img class="me-3" src="img/icon-19.png" alt="透明捐款管道">
+        <div class="itemtext">
+          <h5 class="fw-bold mt-2">透明捐款管道</h5>
+          <p>PetDay不收任何一分捐款手費用，我們將每一毫錢都會使用在需要醫療輔助的毛寶貝們身上</p>
+        </div>
+      </div>
+
+    </div>
   </div>
- 
 
+  <!-- 給毛寶貝們多一點被愛的機會 -->
+  <div class="container-fluid text-center mt-7 pb-7 pt-5 volunteerwrap">
+    <p class="subtitle fw-bold text-light">給辛苦的志工們多點鼓勵！</p>
+    <h3 class="mb-3 mt-3 fw-bold ">給毛寶貝們多一點被愛的機會</h3>
+    <p class="subtitle fw-bold text-light">你是救援小組？愛媽愛爸？中途之家？<br>現在開始PetDay是你最好的靠山與幫手！快成為志工團隊，一起成長幫助毛寶貝們不再浪浪受委屈！</p>
+    <div class="volunteerbg mx-auto mt-3">
+      <img src="img/bgimage-22.png" alt="給辛苦的志工們多點鼓勵！">
+    </div>
+  </div>
+
+    <!-- 如何報名領養會？ -->
+    <div class="container text-center mt-7">
+      <h3 class="mb-3 mt-3 fw-bold ">如何報名領養會?</h3>
+      <p class="subtitle fw-bold">歡迎踴躍報名領養志工活動，不管是身為愛媽愛爸還是活動志工，我們通通需要你！</p>
+      <div class="multiservice row d-flex justify-content-around align-items-center mt-3">
   
+        <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center">
+          <img class="me-3" src="img/guest-img-17.png" alt="愛媽愛爸，待收養">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">愛媽愛爸，待收養</h5>
+            <p>若您有1隻以上的毛寶貝待收養，請先填寫報名資料，申請後將會有活動人員跟您聯繫</p>
+          </div>
+        </div>
+        <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center ">
+          <img class="me-3" src="img/guest-img-17.png" alt="活動志工">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">活動志工</h5>
+            <p>每場收養會我們需要很多志工來幫助每一隻毛寶貝，並幫助現場領養人辦理領養手續</p>
+          </div>
+        </div>
+        <div class="multiitem col-xl-3 col-5 me-2 d-flex align-items-center justify-content-center ">
+          <img class="me-3" src="img/guest-img-17.png" alt="活動現場寵物醫生">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">活動現場寵物醫生</h5>
+            <p>若您具有診療資格，PetDay熱烈歡迎您的加入！</p>
+          </div>
+        </div>
+        <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center">
+          <img class="me-3" src="img/guest-img-17.png" alt="填寫報名表">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">填寫報名表</h5>
+            <p>請先登入志工帳號，並填寫報名會參與表單，待3~5個工作天後將會確認您的參與申請</p>
+          </div>
+        </div>
+        <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center ">
+          <img class="me-3" src="img/guest-img-17.png" alt="專人聯絡">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">專人聯絡</h5>
+            <p>確認申請完成後，PetDay將會有專人與您聯絡當天領養會詳細準備與狀況</p>
+          </div>
+        </div>
+        <div class="multiitem col-xl-3 col-5 me-2 mt-4 d-flex align-items-center justify-content-center">
+          <img class="me-3" src="img/guest-img-17.png" alt="前往領養會！">
+          <div class="itemtext">
+            <h5 class="fw-bold mt-2">前往領養會！</h5>
+            <p>以上流程皆完成後，請於領養會當天準時抵達，若需取消，請於領養會前三天通知</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
 
 
 
@@ -128,8 +310,98 @@
 
 
 
-<!-- footer -->
-  <!-- <div class="footerimg"></div>
+  <!-- 地方毛孩們需要你的愛心幫助！-->
+  <div class="container mt-5">
+    <div class="qualitybanner volunteerbanner text-start">
+
+      <div class="textarea">
+        <h3 class="mb-lg-3 mt-lg-3 mb-1 mt-1 fw-bold ">地方毛孩們需要你的愛心幫助！<br>
+          愛心捐款直達簽約救援站 PetDay不抽成！</h3>
+        <button type="submit" class="btn btn-primary me-2 ">如何捐款></button>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+  <!-- 常見問題 -->
+  <div class="container text-center ">
+    <h3 class="mb-3 fw-bold ">常見成為志工 Q&A</h3>
+    <p class="subtitle fw-bold mb-4">有任何問題或許這裡可以找到更多詳細資料，也歡迎於上班時間聯繫PetDay的客服人員</p>
+
+    <div class="row justify-content-center">
+      <ul class="ps-0 col-8 pe-0 col-8">
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">如何成為志工？需要準備什麼資料？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            請先至會員服務中心頁面，點擊成為志工，即可填寫表單進行申請註冊。請注意務必上傳清晰證件照、駕照或是健保卡進行身份認證，若無法辨識政見內容將退回申請，將透過申請帳號之信箱通知申請通過與否，請留意信箱收件。</p>
+        </li>
+
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">成為志工後我可以獲得什麼福利？該做什麼來換取福利？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            只要有註冊PetDay的志工會員不需任何行為即可享受志工福利，但請注意每人使用的補助款項及金額有限，詳細內容請至志工條款中查閱。福利內容包含：30%急診費用補助、流浪新生貓狗免費健診、至合作診所看診具優惠資格、隔週領養會免費報名參加。
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end align-items-center  ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold"> 領養會該如何報名？需要準備什麼？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">請先登入志工帳號，並填寫領養會參與表單，待3~5個工作天後將會有專人與您聯絡確認您的申請與當天領養會詳細準備資訊。
+          </p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold">急需救援該如何聯絡你們？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">
+            請使用Chat即時通訊功能即時與客服聯絡。</p>
+        </li>
+        <li class="list mb-3">
+          <div class="faqcontent d-flex flex-row-reverse justify-content-end  align-items-center ps-3 pe-3">
+            <h5 class="mb-3 mt-3 fw-bold itemtitle">我想領養，該從哪裡報名領養？</h5>
+            <a href="javascript:;" class="pe-3"><img src="img/plus.svg" alt="more" id="chgicon" class="plus"></a>
+          </div>
+          <p class="faqdetail text-start ps-3 pe-3 pb-3">請先填寫報名資料，申請後將會有活動人員跟您聯繫</p>
+        </li>
+
+
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- footer -->
+  <div class="footerimg">
+    <div class="eventarea text-center">
+      <h2 class="fw-bold mb-3">正在找志工團隊嗎？<br>PetDay長期招募愛心中途<br>歡迎加入我們的定期領養活動</h2>
+
+
+      <div class="eventbtn">
+        <button class="btn detailbtn2 btn-outline-primary me-2"><a href="d2_volunteer.html">成為志工</a></button>
+        <button class="btn btn-primary me-2"><a href="#">成為中途</a></button>
+      </div>
+    </div>
+  </div>
 
   <div class="footer">
     <div class="container-fluid">
@@ -144,11 +416,183 @@
         <p class="copyright ps-0 pe-0 mt-2">© 2022 Pet Day All Rights Reserved.</p>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
-  
+  <!-- swiper 套件js 引入 -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+  <script>
+
+
+
+
+
+
+
+
+
+    /* 自訂初始化的 Swiper 套件的函式 */
+    function initSwiper() {
+      /* 
+      id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
+      要抓取 id "#comment-swiper"
+      
+      */
+
+      //毛爸媽超推薦回饋
+      const swiper1 = new Swiper("#parent-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+
+
+
+      });
+
+
+
+
+
+      //毛孩社交圈 加入參數  
+      const swiper2 = new Swiper("#pet-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+
+
+      //隔離中爸媽
+      const swiper3 = new Swiper("#period-swiper", {
+
+        loop: true,
+        // 加上loop讓輪播可以一直循環
+
+        /*  預設要顯示幾個卡片 */
+        slidesPerView: 1,
+
+        /* 斷點設定 */
+        breakpoints: {
+          /* 螢幕寬度大於等於 992px 時切換為 3 欄 */
+          992: {
+            slidesPerView: 3
+          },
+          /* 螢幕寬度大於等於 768px 時切換為 2 欄 */
+          768: {
+            slidesPerView: 2
+          },
+          /* 更小時都顯示 1 欄 */
+          0: {
+            slidesPerView: 1
+          }
+        },
+        /* 卡片元素的間隔 */
+        spaceBetween: 8,
+        pagination: {
+          /* 想將分頁圓點綁在哪個 class */
+          el: ".swiper-pagination",
+          /* 將輪播設定為可以點擊分頁圓點來切換圖片 */
+          clickable: true
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+
+
+
+
+    }
+
+
+
+
+
+    /* 觸發自己定義的函式 */
+    initSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
 
 
 

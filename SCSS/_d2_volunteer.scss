@@ -1,0 +1,36 @@
+.joinvolunteerbg {
+    height: 905px;
+    width: 100%;
+    background-image: url(../img/bgimage-21.png);
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+
+
+    .joinsolgan {
+        top: 25%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        h2 {
+            text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+        }
+    }
+}
+
+.volunteerbg{
+    max-width: 500px;
+    height: 300px;
+}
+
+.volunteerbanner {
+
+    background-image: url("../img/bgimage-23.png");
+
+    .textarea{
+        left:40%;
+    }
+}
+
+.volunteerwrap{
+    background-color: #fff;
+}
