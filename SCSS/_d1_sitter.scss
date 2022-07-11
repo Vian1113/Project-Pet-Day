@@ -1,0 +1,41 @@
+.joinsitterbg {
+    height: 905px;
+    width: 100%;
+    background-image: url(../img/bgimage-19.png);
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+
+
+    .joinsolgan {
+        top: 25%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        h2 {
+            text-shadow: 1px 1px 0 #fbf9f7, -1px -1px 0 #fbf9f7;
+        }
+    }
+}
+
+.join-bg{
+    position: relative;
+}
+
+.joincontent {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:5;
+
+}
+
+.itemtext{
+    text-align: justify;
+}
+
+.qualitybanner.sitterbanner {
+
+    background-image: url("../img/bgimage-20.png");
+}
+
